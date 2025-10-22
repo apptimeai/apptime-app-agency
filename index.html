@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Apptime</title>
+    <meta name="description" content="Página de links e redirecionamento">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" />
+    <style>
+        :root {
+            /* Tema Dark Minimalista */
+            --color-base-100: #000000;
+            --color-base-200: #1a1a1a;
+            --color-base-300: #333333;
+            --color-base-content: #ffffff;
+            --color-primary: #a3e635; /* Lima */
+            --color-primary-content: #000000;
+            --color-secondary: #3b82f6; /* Azul */
+            --color-secondary-content: #ffffff;
+            --color-neutral: #4b5563;
+        }
+
+        body {
+            background-color: var(--color-base-100);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--color-base-content);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content-wrapper {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <div class="flex flex-col items-center justify-center space-y-8">
+            <img 
+                src="blob:https://apptime.ai/f080b2a9-7b0b-424f-aa0e-fcaade87dda3" 
+                alt="Logo Apptime" 
+                class="w-48 h-48 sm:w-64 sm:h-64 object-cover rounded-full shadow-2xl transition-transform duration-500 hover:scale-105"
+            >
+        </div>
+    </div>
+
+    <footer class="p-4 w-full text-center">
+        <a 
+            href="https://apptime.ai" 
+            class="text-sm font-semibold link link-hover text-gray-400 hover:text-white transition-colors duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Desenvolvido por Apptime.ai
+        </a>
+    </footer>
+
+</body>
+</html>
