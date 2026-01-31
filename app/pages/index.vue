@@ -34,18 +34,18 @@
               <span class="w-2 h-2 rounded-box bg-primary shadow-[0_0_12px_var(--color-primary)] animate-pulse"></span>
               Em Breve
             </div>
-            <h1 class="text-3xl md:text-4xl font-bold text-base-content leading-tight mb-2 uppercase tracking-tighter">
+            <h1 class="text-3xl md:text-4xl font-bold text-base-content leading-tight mb-2 tracking-tighter">
               Apptime Agency
             </h1>
             <p class="text-lg text-base-content/70 font-medium font-archivo">
-              Transformando ideias em experiências digitais extraordinárias através de design de elite e tecnologia de ponta.
+              Transformando ideias em soluções digitais reais através de IA e experts em tecnologia.
             </p>
           </div>
         </header>
 
         <div class="mt-8">
           <a
-            href="https://wa.me/5511999999999"
+            href="https://wa.me/5511975205644"
             target="_blank"
             class="btn btn-primary btn-lg rounded-field px-8 font-bold text-lg hover:-translate-y-0.5 transition-transform brand-gradient border-none text-primary-content shadow-[0_12px_35px_rgba(255,0,174,0.35)]"
           >
@@ -56,14 +56,14 @@
 
         <footer class="mt-8 pt-8 border-t border-base-content/10">
           <p class="text-sm text-base-content/60">
-            Siga nosso instagram
+            Dúvidas? Visite nosso
             <a
-              href="https://instagram.com/apptime.ai"
+              href="https://apptime.ai/help"
               target="_blank"
               class="link link-hover text-base-content/80 font-semibold"
             >
-              @apptime.ai
-            </a>
+              suporte
+            </a>.
           </p>
         </footer>
       </div>
