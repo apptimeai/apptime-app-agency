@@ -6,19 +6,19 @@
   prefersdark: true;
   color-scheme: 'dark';
 
-  --color-base-100: #050a18;
-  --color-base-200: #0a1224;
-  --color-base-300: #1a2a45;
-  --color-base-content: #e2e8f0;
+  --color-base-100: #020617; /* Very dark blue (almost black) */
+  --color-base-200: #0f172a; /* Dark blue slate */
+  --color-base-300: #1e293b; /* Medium blue slate */
+  --color-base-content: #e2e8f0; /* Light gray-blue text */
 
-  --color-primary: #ff7f00;
+  --color-primary: #3b82f6; /* Bright Blue */
   --color-primary-content: #ffffff;
-  --color-secondary: #ff00ae;
+  --color-secondary: #0ea5e9; /* Sky Blue */
   --color-secondary-content: #ffffff;
-  --color-accent: #4508f9;
+  --color-accent: #6366f1; /* Indigo */
   --color-accent-content: #ffffff;
 
-  --color-neutral: #22314f;
+  --color-neutral: #1e293b;
   --color-neutral-content: #e2e8f0;
 
   --radius-selector: 0.4rem;
