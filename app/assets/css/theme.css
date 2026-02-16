@@ -56,9 +56,8 @@
     letter-spacing: -0.02em;
   }
 
-  .text-accent,
-  .font-serif-accent {
-    font-family: 'Georgia', serif;
+  .font-accent {
+    font-family: 'Handlee', cursive;
     font-style: italic;
   }
 }

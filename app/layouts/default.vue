@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-screen bg-base-100 text-base-content font-sans overflow-x-hidden relative selection:bg-primary selection:text-primary-content"
+    class="min-h-screen bg-base-100 text-base-content overflow-x-hidden relative selection:bg-primary selection:text-primary-content"
   >
     <!-- Global Background Gradients -->
     <div class="fixed inset-0 pointer-events-none z-0">
@@ -47,7 +47,7 @@
               />
             </svg>
           </div>
-          <span class="font-bold text-xl tracking-tight uppercase font-heading"
+          <span class="font-bold text-xl tracking-tight uppercase"
             >Apptime Agency</span
           >
         </NuxtLink>
