@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Outfit', 'sans-serif'],
+        sans: ['Space Grotesk', 'sans-serif'],
         heading: ['Space Grotesk', 'sans-serif'],
-        handwriting: ['Caveat', 'cursive'],
+        serif: ['Georgia', 'serif'],
       },
     },
   },

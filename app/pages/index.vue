@@ -14,7 +14,7 @@
     >
       Todo mundo cria sites. <br />
       <span
-        class="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent font-handwriting text-5xl md:text-7xl lg:text-8xl normal-case pb-4"
+        class="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent font-serif italic text-4xl md:text-6xl lg:text-7xl pb-4"
       >
         Nós criamos resultados.
       </span>
@@ -160,7 +160,7 @@
           <h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight">
             O que fazemos <br />
             <span
-              class="text-primary font-handwriting text-4xl md:text-6xl lowercase"
+              class="text-primary font-serif italic text-4xl md:text-6xl lowercase"
               >(de verdade)</span
             >
           </h2>
@@ -260,13 +260,11 @@
 
               <div class="text-center z-10">
                 <div
-                  class="text-7xl font-handwriting font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary mb-2 transform -rotate-12"
+                  class="text-7xl font-serif italic font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary mb-2 transform -rotate-12"
                 >
                   ROI
                 </div>
-                <div
-                  class="text-sm uppercase tracking-widest text-base-content/50"
-                >
+                <div class="text-sm tracking-widest text-base-content/50">
                   Otimizado
                 </div>
               </div>

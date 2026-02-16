@@ -42,7 +42,7 @@
         transparent 35%
       );
     color: var(--color-base-content);
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     min-height: 100vh;
   }
 
@@ -53,14 +53,13 @@
   h5,
   h6 {
     font-family: 'Space Grotesk', sans-serif;
-    text-transform: uppercase;
     letter-spacing: -0.02em;
   }
 
   .text-accent,
-  .font-handwriting {
-    font-family: 'Caveat', cursive;
-    font-style: normal;
+  .font-serif-accent {
+    font-family: 'Georgia', serif;
+    font-style: italic;
   }
 }
 
