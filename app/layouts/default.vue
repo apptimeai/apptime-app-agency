@@ -2,19 +2,11 @@
   <div
     class="min-h-screen bg-base-100 text-base-content overflow-x-hidden relative selection:bg-primary selection:text-primary-content"
   >
-    <!-- Global Background Gradients -->
-    <div class="fixed inset-0 pointer-events-none z-0">
-      <div
-        class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary/10 blur-[120px] rounded-full animate-pulse"
-      ></div>
-      <div
-        class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-secondary/10 blur-[120px] rounded-full animate-pulse delay-700"
-      ></div>
-    </div>
+    <!-- Background is now flat -->
 
     <!-- Navigation -->
     <nav
-      class="fixed top-0 left-0 right-0 z-50 w-full backdrop-blur-md bg-base-100/70 border-b border-white/5 transition-all duration-300"
+      class="fixed top-0 left-0 right-0 z-50 w-full bg-neutral text-neutral-content border-b border-base-300 transition-all duration-300"
     >
       <div
         class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
@@ -54,7 +46,7 @@
         <a
           href="https://wa.me/5511975205644"
           target="_blank"
-          class="hidden md:inline-flex btn btn-sm btn-primary rounded-full px-6 shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all"
+          class="hidden md:inline-flex btn btn-sm btn-primary px-6 shadow-none border-none transition-all"
         >
           Falar com Especialista
         </a>
@@ -68,18 +60,13 @@
 
     <!-- Footer CTA -->
     <footer
-      class="relative z-10 bg-gradient-to-t from-base-100 to-base-300 py-24 text-center px-6 overflow-hidden"
+      class="relative z-10 bg-neutral py-24 text-center px-6 overflow-hidden border-t border-base-300 text-neutral-content"
     >
-      <!-- Glow effect behind -->
-      <div
-        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-96 bg-primary/20 blur-[150px] rounded-full pointer-events-none"
-      ></div>
-
       <div class="relative z-10 max-w-4xl mx-auto">
         <h2 class="text-4xl md:text-6xl font-black mb-6">
           Pronto para transformar seu site em uma máquina de oportunidades?
         </h2>
-        <p class="text-xl md:text-2xl text-base-content/70 mb-10">
+        <p class="text-xl md:text-2xl opacity-70 mb-10">
           Descubra como podemos criar um site que realmente trabalha por você.
         </p>
 
@@ -87,24 +74,24 @@
           <a
             href="https://wa.me/5511975205644"
             target="_blank"
-            class="btn btn-primary btn-lg rounded-full px-12 py-4 h-auto text-xl font-bold shadow-[0_0_50px_-10px_var(--color-primary)] hover:scale-105 transition-transform"
+            class="btn btn-primary btn-lg px-12 py-4 h-auto text-xl font-bold shadow-none border-none transition-transform"
           >
             <i class="fa-brands fa-whatsapp"></i> Fale com a Apptime agora
           </a>
         </div>
 
         <div
-          class="mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-sm text-base-content/40"
+          class="mt-20 pt-8 border-t border-base-300 flex flex-col md:flex-row justify-between items-center text-sm opacity-40"
         >
           <p>
             &copy; {{ new Date().getFullYear() }} Apptime Serviços de Internet
             Ltda. Todos os direitos reservados.
           </p>
           <div class="flex gap-4 mt-4 md:mt-0">
-            <NuxtLink to="/terms" class="hover:text-white transition-colors"
+            <NuxtLink to="/terms" class="hover:text-primary transition-colors"
               >Termos</NuxtLink
             >
-            <NuxtLink to="/privacy" class="hover:text-white transition-colors"
+            <NuxtLink to="/privacy" class="hover:text-primary transition-colors"
               >Privacidade</NuxtLink
             >
           </div>
