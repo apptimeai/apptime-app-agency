@@ -1,12 +1,6 @@
 <template>
-  <main class="max-w-4xl mx-auto px-6 py-12 md:py-20">
+  <main class="max-w-4xl mx-auto px-6 py-20 md:py-32">
     <div class="mb-10">
-      <NuxtLink
-        to="/"
-        class="btn btn-ghost btn-sm pl-0 gap-2 hover:bg-transparent hover:text-primary"
-      >
-        <i class="fa-solid fa-arrow-left"></i> Voltar para Home
-      </NuxtLink>
       <h1 class="text-4xl md:text-5xl font-black mt-6 mb-4">Termos de Uso</h1>
       <p class="opacity-60">Última atualização: 26 de Janeiro de 2024</p>
     </div>

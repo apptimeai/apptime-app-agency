@@ -1,11 +1,41 @@
 <template>
   <!-- Hero Section -->
-  <section class="bg-neutral text-neutral-content border-b border-base-300">
+  <section
+    class="relative bg-base-200 text-base-content pt-24 border-b border-base-300 overflow-hidden"
+  >
+    <!-- Animated Grid Background -->
+    <div class="absolute inset-0 z-0">
+      <!-- Grid Pattern -->
+      <div
+        class="absolute inset-0 opacity-12"
+        style="
+          background-image:
+            linear-gradient(
+              to right,
+              var(--color-primary) 1px,
+              transparent 1px
+            ),
+            linear-gradient(
+              to bottom,
+              var(--color-primary) 1px,
+              transparent 1px
+            );
+          background-size: 60px 60px;
+          animation: gridMove 20s linear infinite;
+        "
+      ></div>
+
+      <!-- Gradient Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-transparent via-base-200/80 to-base-200"
+      ></div>
+    </div>
+
     <header
-      class="relative z-10 w-full max-w-5xl mx-auto px-6 pt-12 pb-24 md:pt-20 md:pb-32 text-center"
+      class="relative z-10 w-full max-w-5xl mx-auto px-6 pt-12 pb-12 md:pt-20 md:pb-20 text-center"
     >
       <div class="badge badge-primary badge-outline mb-6 py-3 px-4 font-bold">
-        🚀 Agência focada em performance
+        Processo rápido e sem burocracia
       </div>
 
       <h1
@@ -20,18 +50,21 @@
       </h1>
 
       <p
-        class="text-xl md:text-2xl opacity-70 max-w-3xl mx-auto mb-10 leading-relaxed font-light"
+        class="text-lg md:text-xl opacity-70 max-w-3xl mx-auto mb-10 leading-relaxed font-light"
       >
-        Chega de site bonito que não gera resultado. A Apptime une
-        <strong class="text-neutral-content font-semibold"
-          >design estratégico</strong
+        Chega de site que não entrega. A Apptime une
+        <strong class="text-base-content font-semibold"
+          >rápido atendimento</strong
         >
         +
-        <strong class="text-neutral-content font-semibold">automação</strong> +
-        <strong class="text-neutral-content font-semibold"
+        <strong class="text-base-content font-semibold"
+          >criação estratégica</strong
+        >
+        +
+        <strong class="text-base-content font-semibold"
           >foco em conversão</strong
         >
-        para transformar visitantes em leads e vendas reais.
+        para transformar o seu site em um sistema que funciona.
       </p>
 
       <div class="flex flex-col items-center justify-center gap-4">
@@ -40,27 +73,20 @@
           target="_blank"
           class="w-full md:w-auto btn btn-primary btn-lg px-8 md:px-12 text-lg h-auto py-4"
         >
-          Quero um site que converte
+          Quero um sistema que converte
           <i class="fa-solid fa-arrow-right ml-2"></i>
         </a>
         <p class="text-sm opacity-50 mt-4 md:mt-0 font-medium">
-          <i class="fa-solid fa-check text-primary mr-1"></i> Sem promessas
-          vazias
+          Se o seu site não traz oportunidades, ele não está cumprindo o papel
+          dele. Vamos mudar isso?
         </p>
-      </div>
-
-      <div
-        class="mt-8 p-4 bg-base-200 inline-block text-sm md:text-base border border-base-300"
-      >
-        👉 Se o seu site não traz oportunidades todos os dias, ele não está
-        cumprindo o papel dele.
       </div>
     </header>
   </section>
 
   <!-- The Problem -->
   <section
-    class="relative z-10 py-20 bg-base-100 text-base-content border-y border-base-300"
+    class="relative z-10 py-20 bg-base-content text-base-100 border-y border-base-300"
   >
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
@@ -152,7 +178,7 @@
 
   <!-- What We Do -->
   <section
-    class="relative z-10 py-20 md:py-32 bg-neutral text-neutral-content overflow-hidden border-b border-base-300"
+    class="relative z-10 py-20 md:py-32 bg-base-100 text-base-content overflow-hidden border-b border-base-300"
   >
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex flex-col lg:flex-row gap-16 items-center">
@@ -242,7 +268,7 @@
 
         <div class="lg:w-1/2 w-full">
           <div
-            class="relative p-8 border-4 border-base-300 bg-neutral shadow-2xl"
+            class="relative p-8 border-4 border-base-300 bg-base-100 shadow-2xl"
           >
             <!-- Abstract Visual Representation of Conversion -->
             <div
@@ -339,7 +365,7 @@
   </section>
 
   <!-- Audience & Why Us Split -->
-  <section class="py-20 bg-neutral text-neutral-content relative z-10">
+  <section class="py-20 bg-base-100 text-base-content relative z-10">
     <div class="max-w-7xl mx-auto px-6">
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-24">
         <!-- Audience -->
@@ -418,3 +444,14 @@
 // Scripts can go here if needed (e.g. for dynamic interactions)
 // Currently mostly static + CSS animations
 </script>
+
+<style scoped>
+@keyframes gridMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60px 60px;
+  }
+}
+</style>
