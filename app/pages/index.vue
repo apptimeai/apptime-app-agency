@@ -39,22 +39,21 @@
       </div>
 
       <h1
-        class="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-[1.1] md:leading-[1.1] tracking-tight"
+        class="text-3xl md:text-6xl font-black mb-6 leading-[1.1] md:leading-[1.1] tracking-tight"
       >
         Todo mundo cria sites. <br />
         <span
-          class="block mt-2 text-primary font-accent italic text-4xl md:text-6xl lg:text-7xl pb-4"
+          class="block mt-2 text-primary font-accent italic text-4xl md:text-7xl pb-4"
         >
           Nós criamos resultados.
         </span>
       </h1>
 
       <p
-        class="text-lg md:text-xl opacity-70 max-w-3xl mx-auto mb-10 leading-relaxed font-light"
+        class="text-base md:text-xl opacity-70 max-w-3xl mx-auto mb-10 leading-relaxed font-light"
       >
-        Chega de site que não entrega. A Apptime une
         <strong class="text-base-content font-semibold"
-          >rápido atendimento</strong
+          >Rápido atendimento</strong
         >
         +
         <strong class="text-base-content font-semibold"
@@ -71,43 +70,103 @@
         <a
           href="https://wa.me/5511975205644"
           target="_blank"
-          class="w-full md:w-auto btn btn-primary btn-lg px-8 md:px-12 text-lg h-auto py-4"
+          class="w-full md:w-auto btn btn-primary btn-lg px-2 md:px-12 text-base md:text-lg h-auto py-4"
         >
           Quero um sistema que converte
           <i class="fa-solid fa-arrow-right ml-2"></i>
         </a>
         <p class="text-sm opacity-50 mt-4 md:mt-0 font-medium">
-          Se o seu site não traz oportunidades, ele não está cumprindo o papel
-          dele. Vamos mudar isso?
+          Rápido e direto, sem tomar o seu tempo.
         </p>
       </div>
     </header>
+  </section>
+
+  <!-- Clients Carousel -->
+  <section class="py-10 bg-base-100 border-b border-base-300 overflow-hidden">
+    <div class="text-center mb-6">
+      <p class="text-xs font-bold tracking-widest uppercase opacity-40">
+        Quem confia na Apptime
+      </p>
+    </div>
+    <div class="clients-carousel-wrapper">
+      <div class="clients-carousel-track">
+        <!-- First set -->
+        <div class="clients-carousel-item">
+          <img src="/images/logos/cns-logo.png" alt="CNS" class="client-logo" />
+        </div>
+        <div class="clients-carousel-item">
+          <img
+            src="/images/logos/forus-logo.png"
+            alt="Forus"
+            class="client-logo"
+          />
+        </div>
+        <div class="clients-carousel-item">
+          <img
+            src="/images/logos/loupeloupe-logo.png"
+            alt="Loupe Loupe"
+            class="client-logo"
+          />
+        </div>
+        <div class="clients-carousel-item">
+          <img
+            src="/images/logos/souzalima-logo.png"
+            alt="Souza Lima"
+            class="client-logo"
+          />
+        </div>
+        <!-- Duplicated set for seamless loop -->
+        <div class="clients-carousel-item" aria-hidden="true">
+          <img src="/images/logos/cns-logo.png" alt="CNS" class="client-logo" />
+        </div>
+        <div class="clients-carousel-item" aria-hidden="true">
+          <img
+            src="/images/logos/forus-logo.png"
+            alt="Forus"
+            class="client-logo"
+          />
+        </div>
+        <div class="clients-carousel-item" aria-hidden="true">
+          <img
+            src="/images/logos/loupeloupe-logo.png"
+            alt="Loupe Loupe"
+            class="client-logo"
+          />
+        </div>
+        <div class="clients-carousel-item" aria-hidden="true">
+          <img
+            src="/images/logos/souzalima-logo.png"
+            alt="Souza Lima"
+            class="client-logo"
+          />
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- The Problem -->
   <section
     class="relative z-10 py-20 bg-base-content text-base-100 border-y border-base-300"
   >
-    <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-6xl mx-auto md:px-6 px-4">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">
-          O problema não é ter um site
-        </h2>
-        <p class="text-xl opacity-70">
-          O problema é ter um site que
-          <span class="text-primary font-bold underline decoration-primary"
-            >não converte</span
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+          Se seu site não traz oportunidades,<br class="hidden md:block" />
+          ele não está
+          <span class="text-primary font-accent italic"
+            >cumprindo o papel dele</span
           >.
-        </p>
+        </h2>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="grid md:grid-cols-4 gap-6">
         <div
           class="card bg-base-200 text-base-content border border-base-300 hover:border-primary transition-all duration-300"
         >
           <div class="card-body items-center text-center">
             <div
-              class="w-16 h-16 bg-base-300 flex items-center justify-center mb-4 text-3xl"
+              class="w-16 h-16 rounded-full bg-base-300 flex items-center justify-center mb-4 text-3xl"
             >
               😵
             </div>
@@ -123,13 +182,13 @@
         >
           <div class="card-body items-center text-center">
             <div
-              class="w-16 h-16 bg-base-300 flex items-center justify-center mb-4 text-3xl"
+              class="w-16 h-16 rounded-full bg-base-300 flex items-center justify-center mb-4 text-3xl"
             >
               📉
             </div>
             <h3 class="font-bold text-lg mb-2">Tráfego que não vira lead</h3>
             <p class="text-sm opacity-60">
-              Visitantes entram e saem sem deixar rastro.
+              Visitantes entram e saem sem deixar interesse.
             </p>
           </div>
         </div>
@@ -139,11 +198,11 @@
         >
           <div class="card-body items-center text-center">
             <div
-              class="w-16 h-16 bg-base-300 flex items-center justify-center mb-4 text-3xl"
+              class="w-16 h-16 rounded-full bg-base-300 flex items-center justify-center mb-4 text-3xl"
             >
               🤯
             </div>
-            <h3 class="font-bold text-lg mb-2">CRM desorganizado</h3>
+            <h3 class="font-bold text-lg mb-2">Tudo no improviso</h3>
             <p class="text-sm opacity-60">
               Leads perdidos por falta de gestão e follow-up.
             </p>
@@ -155,7 +214,7 @@
         >
           <div class="card-body items-center text-center">
             <div
-              class="w-16 h-16 bg-base-300 flex items-center justify-center mb-4 text-3xl"
+              class="w-16 h-16 rounded-full bg-base-300 flex items-center justify-center mb-4 text-3xl"
             >
               🐢
             </div>
@@ -169,8 +228,8 @@
 
       <div class="text-center mt-12 max-w-2xl mx-auto">
         <p class="text-lg font-medium italic opacity-80">
-          "Todo mundo 'faz site'. Poucos pensam em jornada, oferta e automação.
-          <br class="hidden md:block" />É aí que a Apptime entra."
+          Todo mundo 'faz site'. Poucos pensam em jornada, oferta e automação.
+          <br class="hidden md:block" />Vamos mudar isso?
         </p>
       </div>
     </div>
@@ -180,9 +239,9 @@
   <section
     class="relative z-10 py-20 md:py-32 bg-base-100 text-base-content overflow-hidden border-b border-base-300"
   >
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="flex flex-col lg:flex-row gap-16 items-center">
-        <div class="lg:w-1/2">
+    <div class="max-w-6xl mx-auto md:px-6 px-4">
+      <div class="flex flex-col md:flex-row gap-16 items-center">
+        <div class="md:w-1/2">
           <h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight">
             O que fazemos <br />
             <span
@@ -266,7 +325,7 @@
           </div>
         </div>
 
-        <div class="lg:w-1/2 w-full">
+        <div class="md:w-1/2 w-full">
           <div
             class="relative p-8 border-4 border-base-300 bg-base-100 shadow-2xl"
           >
@@ -293,7 +352,7 @@
   <section
     class="py-20 bg-base-100 text-base-content relative z-10 border-b border-base-300"
   >
-    <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-6xl mx-auto md:px-6 px-4">
       <h2 class="text-3xl md:text-5xl font-bold text-center mb-16">
         Como funciona nosso método
       </h2>
@@ -366,8 +425,8 @@
 
   <!-- Audience & Why Us Split -->
   <section class="py-20 bg-base-100 text-base-content relative z-10">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid lg:grid-cols-2 gap-12 lg:gap-24">
+    <div class="max-w-7xl mx-auto md:px-6 px-4">
+      <div class="grid md:grid-cols-2 gap-12">
         <!-- Audience -->
         <div>
           <h2 class="text-3xl font-bold mb-8">Para quem é a Apptime</h2>
@@ -452,6 +511,77 @@
   }
   100% {
     background-position: 60px 60px;
+  }
+}
+
+/* Clients Carousel */
+.clients-carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+
+.clients-carousel-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: marquee 18s linear infinite;
+}
+
+.clients-carousel-track:hover {
+  animation-play-state: paused;
+}
+
+.clients-carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4rem;
+  border-right: 1px solid
+    color-mix(in srgb, var(--color-base-content) 15%, transparent);
+  flex-shrink: 0;
+}
+
+.clients-carousel-item:last-child {
+  border-right: none;
+}
+
+.client-logo {
+  height: 40px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  opacity: 0.55;
+  filter: grayscale(100%) brightness(200%);
+  transition:
+    opacity 0.3s ease,
+    filter 0.3s ease;
+}
+
+.client-logo:hover {
+  opacity: 1;
+  filter: grayscale(0%) brightness(100%);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 </style>
