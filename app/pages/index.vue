@@ -328,21 +328,25 @@
         </div>
 
         <div class="md:w-1/2 w-full">
-          <div
-            class="relative p-8 border-4 border-base-300 bg-base-100 shadow-2xl"
-          >
-            <!-- Abstract Visual Representation of Conversion -->
+          <!-- Cases Image Switcher -->
+          <div class="cases-switcher">
             <div
-              class="aspect-square relative flex items-center justify-center border-8 border-base-300"
+              v-for="(img, i) in caseImages"
+              :key="img"
+              class="cases-slide"
+              :class="{ active: i === currentCaseIndex }"
             >
-              <div class="text-center z-10">
-                <div
-                  class="text-7xl font-accent italic font-bold text-primary mb-2 transform -rotate-12"
-                >
-                  ROI
-                </div>
-                <div class="text-sm tracking-widest opacity-50">Otimizado</div>
-              </div>
+              <img :src="img" :alt="'Case ' + (i + 1)" class="cases-img" />
+            </div>
+            <!-- Dots -->
+            <div class="cases-dots">
+              <button
+                v-for="(img, i) in caseImages"
+                :key="'dot-' + i"
+                class="cases-dot"
+                :class="{ active: i === currentCaseIndex }"
+                @click="currentCaseIndex = i"
+              />
             </div>
           </div>
         </div>
@@ -451,21 +455,42 @@
             </li>
           </ul>
 
-          <div class="bg-base-200 p-6 border-l-8 border-primary">
+          <div class="bg-base-200 p-6 border-l-8 border-primary mb-8">
             <p class="mb-2">
-              🤔 <strong>Se você quer só “um site bonito”</strong>,
+              🤔 <strong>Se você quer só "um site bonito"</strong>,
               provavelmente não somos pra você.
             </p>
             <p class="font-bold text-primary">
               😎 Se você quer resultado, somos.
             </p>
           </div>
+
+          <!-- Mobile Websites Carousel -->
+          <div class="websites-carousel-wrapper">
+            <div
+              class="websites-carousel-track"
+              :style="{ transform: `translateX(-${audienceCarouselOffset}px)` }"
+            >
+              <div
+                v-for="(img, i) in websiteImagesLoop"
+                :key="'aud-' + i"
+                class="websites-carousel-item"
+              >
+                <div class="mobile-frame">
+                  <div class="mobile-frame-notch"></div>
+                  <div class="mobile-frame-screen">
+                    <img :src="img" :alt="'Website ' + (i + 1)" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Why Us -->
         <div>
           <h2 class="text-3xl font-bold mb-8">Por que escolher a Apptime?</h2>
-          <div class="grid sm:grid-cols-2 gap-4">
+          <div class="grid sm:grid-cols-2 gap-4 mb-8">
             <div class="p-4 bg-base-200 hover:bg-base-300 transition-colors">
               <div class="text-3xl mb-2">🚀</div>
               <h4 class="font-bold mb-1">Sistema de vendas</h4>
@@ -495,6 +520,27 @@
               </p>
             </div>
           </div>
+
+          <!-- Mobile Websites Carousel (reverse direction) -->
+          <div class="websites-carousel-wrapper">
+            <div
+              class="websites-carousel-track"
+              :style="{ transform: `translateX(-${whyUsCarouselOffset}px)` }"
+            >
+              <div
+                v-for="(img, i) in websiteImagesLoopReverse"
+                :key="'why-' + i"
+                class="websites-carousel-item"
+              >
+                <div class="mobile-frame">
+                  <div class="mobile-frame-notch"></div>
+                  <div class="mobile-frame-screen">
+                    <img :src="img" :alt="'Website ' + (i + 1)" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -502,8 +548,104 @@
 </template>
 
 <script setup>
-// Scripts can go here if needed (e.g. for dynamic interactions)
-// Currently mostly static + CSS animations
+import { computed, onMounted, onUnmounted, ref } from 'vue';
+
+// ── Cases image switcher ──────────────────────────────────────────────────────
+const caseImages = [
+  '/images/cases/app-store-analytics.png',
+  '/images/cases/apptime-funnel.png',
+  '/images/cases/cathedra-forms.png',
+  '/images/cases/cns-forms.png',
+  '/images/cases/copy-oferta.png',
+  '/images/cases/copy-pao-caseiro.png',
+  '/images/cases/forus-google-play.png',
+  '/images/cases/google-analytics-chart.png',
+  '/images/cases/google-analytics-funnel.png',
+  '/images/cases/loupeloupe-1.png',
+  '/images/cases/loupeloupe-2.png',
+  '/images/cases/souzalima-maps-whatsapp.png',
+];
+
+const currentCaseIndex = ref(0);
+let caseTimer = null;
+
+// ── Websites carousel ─────────────────────────────────────────────────────────
+const websiteImages = [
+  '/images/websites/akira_appti_me_1770650444747 1.png',
+  '/images/websites/cardapio-ehfjjv_appti_me_1770650473303 2.png',
+  '/images/websites/cardapio-restaurante-italiano-tp2n40zg_appti_me_1770650762598 2.png',
+  '/images/websites/cathedra_appti_me_1770650723958 2.png',
+  '/images/websites/cns_com_br_1770650454730 2.png',
+  '/images/websites/delicias-da-lu-hxxouwzc_appti_me_1770650759178 2.png',
+  '/images/websites/jogo-luta-3d-mobile-combate-personalizaca-a0qzw7ta_appti_me_1770650460086 1.png',
+  '/images/websites/loupeloupe_com_1771440749278 1.png',
+  '/images/websites/mimi-se_appti_me_1771440746783 1.png',
+  '/images/websites/quiz-emagrecimento-cartoon-dqmcchko_appti_me_1770650476417 1.png',
+  '/images/websites/souzalimaodontologia_com_1770650470235 2.png',
+];
+
+// Duplicate for seamless loop
+const websiteImagesLoop = computed(() => [...websiteImages, ...websiteImages]);
+const websiteImagesLoopReverse = computed(() => {
+  const reversed = [...websiteImages].reverse();
+  return [...reversed, ...reversed];
+});
+
+const ITEM_WIDTH = 140; // px (frame width + gap)
+const audienceCarouselOffset = ref(0);
+const whyUsCarouselOffset = ref(0);
+const totalWidth = computed(() => websiteImages.length * ITEM_WIDTH);
+
+let websiteTimer = null;
+
+function tick() {
+  // Cases switcher
+  currentCaseIndex.value = (currentCaseIndex.value + 1) % caseImages.length;
+
+  // Audience carousel (left)
+  audienceCarouselOffset.value += 0.5;
+  if (audienceCarouselOffset.value >= totalWidth.value) {
+    audienceCarouselOffset.value = 0;
+  }
+
+  // Why Us carousel (right)
+  whyUsCarouselOffset.value -= 0.5;
+  if (whyUsCarouselOffset.value <= 0) {
+    whyUsCarouselOffset.value = totalWidth.value;
+  }
+}
+
+onMounted(() => {
+  whyUsCarouselOffset.value = totalWidth.value / 2;
+  // Cases: switch every 2.5s
+  caseTimer = setInterval(() => {
+    currentCaseIndex.value = (currentCaseIndex.value + 1) % caseImages.length;
+  }, 2500);
+  // Carousels: smooth RAF loop
+  let lastTime = null;
+  function animate(ts) {
+    if (lastTime !== null) {
+      const delta = ts - lastTime;
+      const speed = 0.04; // px per ms
+      audienceCarouselOffset.value += speed * delta;
+      if (audienceCarouselOffset.value >= totalWidth.value) {
+        audienceCarouselOffset.value -= totalWidth.value;
+      }
+      whyUsCarouselOffset.value += speed * delta;
+      if (whyUsCarouselOffset.value >= totalWidth.value) {
+        whyUsCarouselOffset.value -= totalWidth.value;
+      }
+    }
+    lastTime = ts;
+    websiteTimer = requestAnimationFrame(animate);
+  }
+  websiteTimer = requestAnimationFrame(animate);
+});
+
+onUnmounted(() => {
+  clearInterval(caseTimer);
+  cancelAnimationFrame(websiteTimer);
+});
 </script>
 
 <style scoped>
@@ -585,5 +727,128 @@
   100% {
     transform: translateX(-50%);
   }
+}
+
+/* ── Cases Switcher ─────────────────────────────────────────────────────────── */
+.cases-switcher {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 4px solid var(--color-base-300);
+  background: var(--color-base-200);
+}
+
+.cases-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+.cases-slide.active {
+  opacity: 1;
+}
+
+.cases-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cases-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 10;
+}
+
+.cases-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--color-base-content) 30%, transparent);
+  border: none;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+  padding: 0;
+}
+
+.cases-dot.active {
+  background: var(--color-primary);
+  transform: scale(1.3);
+}
+
+/* ── Websites Carousel ──────────────────────────────────────────────────────── */
+.websites-carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 12%,
+    black 88%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 12%,
+    black 88%,
+    transparent 100%
+  );
+}
+
+.websites-carousel-track {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  will-change: transform;
+}
+
+.websites-carousel-item {
+  flex-shrink: 0;
+}
+
+/* Mobile Frame */
+.mobile-frame {
+  width: 100px;
+  background: var(--color-base-content);
+  border-radius: 18px;
+  padding: 8px 5px 10px;
+  box-shadow:
+    0 8px 24px color-mix(in srgb, var(--color-base-content) 30%, transparent),
+    inset 0 0 0 1px
+      color-mix(in srgb, var(--color-base-content) 60%, transparent);
+  position: relative;
+}
+
+.mobile-frame-notch {
+  width: 36px;
+  height: 6px;
+  background: color-mix(in srgb, var(--color-base-100) 20%, transparent);
+  border-radius: 3px;
+  margin: 0 auto 6px;
+}
+
+.mobile-frame-screen {
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 9 / 16;
+  background: var(--color-base-200);
+}
+
+.mobile-frame-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
 }
 </style>
