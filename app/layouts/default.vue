@@ -58,8 +58,7 @@ onUnmounted(() => {
           >
         </NuxtLink>
         <a
-          href="https://wa.me/5511975205644"
-          target="_blank"
+          href="#cta"
           class="inline-flex btn btn-sm btn-primary md:px-6 shadow-none border-none transition-all"
         >
           Começar um projeto <i class="fa-solid fa-arrow-right"></i>
@@ -73,6 +72,7 @@ onUnmounted(() => {
     </div>
 
     <div
+      id="cta"
       class="py-24 px-6 border-t border-base-300 bg-base-content text-base-100 text-center"
     >
       <div class="relative z-10 max-w-4xl mx-auto">

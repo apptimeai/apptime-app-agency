@@ -68,8 +68,7 @@
 
       <div class="flex flex-col items-center justify-center gap-4">
         <a
-          href="https://wa.me/5511975205644"
-          target="_blank"
+          href="#cta"
           class="w-full md:w-auto btn btn-primary btn-lg px-2 md:px-12 text-base md:text-lg h-auto py-4"
         >
           Quero um sistema que converte
@@ -232,8 +231,7 @@
       </div>
       <div class="flex flex-col items-center justify-center gap-4 mt-12">
         <a
-          href="https://wa.me/5511975205644"
-          target="_blank"
+          href="#cta"
           class="w-full md:w-auto btn btn-primary btn-lg px-2 md:px-12 text-base md:text-lg h-auto py-2"
         >
           Quero trazer mais oportunidades
@@ -323,11 +321,7 @@
           </div>
 
           <div class="mt-10">
-            <a
-              href="https://wa.me/5511975205644"
-              target="_blank"
-              class="btn btn-outline btn-primary px-8"
-            >
+            <a href="#cta" class="btn btn-outline btn-primary px-8">
               Ver se isso serve pra mim
             </a>
           </div>
