@@ -43,7 +43,7 @@
       >
         Todo mundo cria sites. <br />
         <span
-          class="block mt-2 text-primary font-accent italic text-4xl md:text-7xl pb-4"
+          class="block mt-2 text-primary font-accent italic text-3xl md:text-6xl pb-4"
         >
           Nós criamos resultados.
         </span>
@@ -152,11 +152,9 @@
     <div class="max-w-6xl mx-auto md:px-6 px-4">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-          Se seu site não traz oportunidades,<br class="hidden md:block" />
-          ele não está
-          <span class="text-primary font-accent italic"
-            >cumprindo o papel dele</span
-          >.
+          Se seu site não traz
+          <span class="text-primary font-accent italic">oportunidades</span>,
+          <br class="hidden md:block" />ele não está cumprindo o papel dele.
         </h2>
       </div>
 
@@ -232,6 +230,16 @@
           <br class="hidden md:block" />Vamos mudar isso?
         </p>
       </div>
+      <div class="flex flex-col items-center justify-center gap-4 mt-12">
+        <a
+          href="https://wa.me/5511975205644"
+          target="_blank"
+          class="w-full md:w-auto btn btn-primary btn-lg px-2 md:px-12 text-base md:text-lg h-auto py-2"
+        >
+          Quero trazer mais oportunidades
+          <i class="fa-solid fa-arrow-right ml-2"></i>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -244,8 +252,7 @@
         <div class="md:w-1/2">
           <h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight">
             O que fazemos <br />
-            <span
-              class="text-primary font-accent italic text-4xl md:text-6xl lowercase"
+            <span class="text-primary font-accent italic lowercase"
               >(de verdade)</span
             >
           </h2>
@@ -292,7 +299,7 @@
               <div>
                 <h3 class="text-xl font-bold mb-1">Automação de processos</h3>
                 <p class="opacity-70">
-                  Menos trabalho manual. Mais velocidade para vender.
+                  Menos trabalho manual. Mais tempo para focar no que importa.
                 </p>
               </div>
             </div>
@@ -305,10 +312,11 @@
               </div>
               <div>
                 <h3 class="text-xl font-bold mb-1">
-                  Foco em resultado, não em vaidade
+                  Foco em resultado, não em criar um site
                 </h3>
                 <p class="opacity-70">
-                  Cada página tem um objetivo claro: gerar contato ou venda.
+                  Cada página tem um objetivo claro: otimizar para melhorar a
+                  experiência do usuário e as conversões.
                 </p>
               </div>
             </div>
