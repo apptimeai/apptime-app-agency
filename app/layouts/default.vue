@@ -72,9 +72,8 @@ onUnmounted(() => {
       <slot />
     </div>
 
-    <!-- Footer CTA -->
-    <footer
-      class="relative z-10 bg-base-100 py-24 text-center px-6 overflow-hidden border-t border-base-300 text-base-content"
+    <div
+      class="py-24 px-6 border-t border-base-300 bg-base-content text-base-100 text-center"
     >
       <div class="relative z-10 max-w-4xl mx-auto">
         <h2 class="text-4xl md:text-6xl font-black mb-6">
@@ -90,12 +89,20 @@ onUnmounted(() => {
             target="_blank"
             class="btn btn-primary btn-lg px-12 py-4 h-auto text-xl font-bold shadow-none border-none transition-transform"
           >
-            <i class="fa-brands fa-whatsapp"></i> Fale com a Apptime agora
+            Começar um projeto agora
+            <i class="fa-solid fa-arrow-right ml-2"></i>
           </a>
         </div>
+      </div>
+    </div>
 
+    <!-- Footer CTA -->
+    <footer
+      class="relative z-10 py-24 px-6 overflow-hidden border-t border-base-300 bg-base-100 text-base-content"
+    >
+      <div class="relative z-10 max-w-4xl mx-auto">
         <div
-          class="mt-20 pt-8 border-t border-base-300 flex flex-col md:flex-row justify-between items-center text-sm opacity-40"
+          class="flex flex-col md:flex-row justify-between items-center text-sm opacity-40"
         >
           <p>
             &copy; {{ new Date().getFullYear() }} Apptime Serviços de Internet

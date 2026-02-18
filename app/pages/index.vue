@@ -358,7 +358,7 @@
 
   <!-- Method -->
   <section
-    class="py-20 bg-base-100 text-base-content relative z-10 border-b border-base-300"
+    class="py-20 bg-base-content text-base-100 relative z-10 border-b border-base-300"
   >
     <div class="max-w-6xl mx-auto md:px-6 px-4">
       <h2 class="text-3xl md:text-5xl font-bold text-center mb-16">
