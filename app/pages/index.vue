@@ -105,50 +105,58 @@
       <div class="clients-carousel-track">
         <!-- First set -->
         <div class="clients-carousel-item">
-          <img src="/images/logos/cns-logo.png" alt="CNS" class="client-logo" />
+          <img
+            src="/images/logos/cns-logo.webp"
+            alt="CNS"
+            class="client-logo"
+          />
         </div>
         <div class="clients-carousel-item">
           <img
-            src="/images/logos/forus-logo.png"
+            src="/images/logos/forus-logo.webp"
             alt="Forus"
             class="client-logo"
           />
         </div>
         <div class="clients-carousel-item">
           <img
-            src="/images/logos/loupeloupe-logo.png"
+            src="/images/logos/loupeloupe-logo.webp"
             alt="Loupe Loupe"
             class="client-logo"
           />
         </div>
         <div class="clients-carousel-item">
           <img
-            src="/images/logos/souzalima-logo.png"
+            src="/images/logos/souzalima-logo.webp"
             alt="Souza Lima"
             class="client-logo"
           />
         </div>
         <!-- Duplicated set for seamless loop -->
         <div class="clients-carousel-item" aria-hidden="true">
-          <img src="/images/logos/cns-logo.png" alt="CNS" class="client-logo" />
+          <img
+            src="/images/logos/cns-logo.webp"
+            alt="CNS"
+            class="client-logo"
+          />
         </div>
         <div class="clients-carousel-item" aria-hidden="true">
           <img
-            src="/images/logos/forus-logo.png"
+            src="/images/logos/forus-logo.webp"
             alt="Forus"
             class="client-logo"
           />
         </div>
         <div class="clients-carousel-item" aria-hidden="true">
           <img
-            src="/images/logos/loupeloupe-logo.png"
+            src="/images/logos/loupeloupe-logo.webp"
             alt="Loupe Loupe"
             class="client-logo"
           />
         </div>
         <div class="clients-carousel-item" aria-hidden="true">
           <img
-            src="/images/logos/souzalima-logo.png"
+            src="/images/logos/souzalima-logo.webp"
             alt="Souza Lima"
             class="client-logo"
           />
@@ -423,52 +431,52 @@ const cases = [
     title: 'Captação de Leads',
     icon: 'fa-regular fa-id-card',
     description: 'Formulário estratégico para captação de milhares de leads.',
-    image: '/images/cases/captacao-de-leads.png',
+    image: '/images/cases/captacao-de-leads.webp',
   },
   {
     title: 'Ranking no Google',
     icon: 'fa-solid fa-map-location-dot',
     description:
       'Site institucional com SEO otimizado para aparecer no Google, Google Meu Negócio e Google Maps.',
-    image: '/images/cases/ranking-no-seo-e-whatsapp.png',
+    image: '/images/cases/ranking-no-seo-e-whatsapp.webp',
   },
   {
     title: 'Venda e Entrega de Produtos',
     icon: 'fa-solid fa-bag-shopping',
     description:
       'E-commerce com envio de email marketing, gestão de estoque, integração com fretes e geração de notas fiscais.',
-    image: '/images/cases/venda-e-entrega-de-produtos.png',
+    image: '/images/cases/venda-e-entrega-de-produtos.webp',
   },
   {
     title: 'Conversão para Páginas',
     icon: 'fa-solid fa-bullhorn',
     description:
       'Landing page personalizada para conversão direta de leads qualificados.',
-    image: '/images/cases/conversao-para-paginas.png',
+    image: '/images/cases/conversao-para-paginas.webp',
   },
   {
     title: 'App com Alto Tráfego',
     icon: 'fa-solid fa-mobile-screen-button',
     description:
       'Plataforma + App com experiência do usuário fluída e milhares de acessos e downloads.',
-    image: '/images/cases/app-com-alto-trafego.png',
+    image: '/images/cases/app-com-alto-trafego.webp',
   },
 ];
 
 // ── Websites carousel ─────────────────────────────────────────────────────────
 const websiteImages = [
-  '/images/websites/akira_appti_me.png',
-  '/images/websites/cardapio-ehfjjv_appti_me.png',
-  '/images/websites/cardapio-restaurante-italiano-tp2n40zg_appti_me.png',
-  '/images/websites/cathedra_appti_me.png',
-  '/images/websites/cns_com_br.png',
-  '/images/websites/delicias-da-lu-hxxouwzc_appti_me.png',
-  '/images/websites/jogo-luta-3d-mobile-combate-personalizaca-a0qzw7ta_appti_me.png',
-  '/images/websites/loupeloupe_com.png',
-  '/images/websites/mimi-se_appti_me.png',
-  '/images/websites/observatorio-migracao-religiao_appti_me.png',
-  '/images/websites/quiz-emagrecimento-cartoon-dqmcchko_appti_me.png',
-  '/images/websites/souzalimaodontologia_com.png',
+  '/images/websites/akira_appti_me.webp',
+  '/images/websites/cardapio-ehfjjv_appti_me.webp',
+  '/images/websites/cardapio-restaurante-italiano-tp2n40zg_appti_me.webp',
+  '/images/websites/cathedra_appti_me.webp',
+  '/images/websites/cns_com_br.webp',
+  '/images/websites/delicias-da-lu-hxxouwzc_appti_me.webp',
+  '/images/websites/jogo-luta-3d-mobile-combate-personalizaca-a0qzw7ta_appti_me.webp',
+  '/images/websites/loupeloupe_com.webp',
+  '/images/websites/mimi-se_appti_me.webp',
+  '/images/websites/observatorio-migracao-religiao_appti_me.webp',
+  '/images/websites/quiz-emagrecimento-cartoon-dqmcchko_appti_me.webp',
+  '/images/websites/souzalimaodontologia_com.webp',
 ];
 
 // Duplicate for seamless loop

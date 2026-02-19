@@ -38,7 +38,7 @@ export default defineNuxtConfig({
         },
         {
           property: 'og:image',
-          content: '/og-image.jpg',
+          content: '/og-image.webp',
         },
         { name: 'twitter:card', content: 'summary_large_image' },
         {
@@ -52,7 +52,7 @@ export default defineNuxtConfig({
         },
         {
           name: 'twitter:image',
-          content: '/og-image.jpg',
+          content: '/og-image.webp',
         },
       ],
       link: [
