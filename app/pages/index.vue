@@ -253,7 +253,7 @@
           href="#cta"
           class="btn border-none rounded-full bg-gradient-to-r from-primary to-info hover:brightness-110 text-white px-8 shadow-[0_0_20px_color-mix(in_srgb,var(--color-primary)_30%,transparent)]"
         >
-          Também quero um projeto <i class="fa-solid fa-arrow-right"></i>
+          Quero um projeto de verdade <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
     </div>
@@ -271,7 +271,11 @@
       <!-- Header -->
       <div class="text-center max-w-3xl mx-auto mb-16">
         <h2 class="text-3xl md:text-5xl font-black mb-6">
-          Processo direto ao ponto
+          Processo
+          <span
+            class="bg-gradient-to-r from-primary font-accent italic pr-2 to-info bg-clip-text text-transparent"
+            >direto ao ponto</span
+          >
         </h2>
         <p class="text-lg md:text-xl opacity-80 leading-relaxed">
           Você não precisa de reunião desnecessária nem de “especialista”
@@ -285,26 +289,42 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
         <!-- Step 1 -->
         <div
-          class="card bg-base-100/50 border border-base-content/10 p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"
+          class="card bg-base-100/50 border border-base-content/10 p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 group"
         >
-          <div class="text-4xl mb-4">1️⃣</div>
-          <h3 class="text-xl font-bold mb-2 text-white">
+          <div
+            class="text-7xl mb-4 font-accent font-black italic bg-gradient-to-br from-primary/80 to-info/80 bg-clip-text text-transparent"
+          >
+            01
+          </div>
+          <h3
+            class="text-xl font-bold mb-2 text-white group-hover:text-primary transition-colors duration-300"
+          >
             Diagnóstico objetivo
           </h3>
-          <p class="text-sm opacity-70 leading-relaxed">
+          <p
+            class="text-sm opacity-70 leading-relaxed group-hover:opacity-100 transition-opacity duration-300"
+          >
             Entendemos seu negócio e definimos o foco: gerar leads ou vendas.
           </p>
         </div>
 
         <!-- Step 2 -->
         <div
-          class="card bg-base-100/50 border border-base-content/10 p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"
+          class="card bg-base-100/50 border border-base-content/10 p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 group"
         >
-          <div class="text-4xl mb-4">2️⃣</div>
-          <h3 class="text-xl font-bold mb-2 text-white">
+          <div
+            class="text-7xl mb-4 font-accent font-black italic bg-gradient-to-br from-primary/80 to-info/80 bg-clip-text text-transparent"
+          >
+            02
+          </div>
+          <h3
+            class="text-xl font-bold mb-2 text-white group-hover:text-primary transition-colors duration-300"
+          >
             Estrutura que converte
           </h3>
-          <p class="text-sm opacity-70 leading-relaxed">
+          <p
+            class="text-sm opacity-70 leading-relaxed group-hover:opacity-100 transition-opacity duration-300"
+          >
             Criamos página com copy estratégica + design funcional. Nada é
             estético. Tudo é pensado para conversão.
           </p>
@@ -312,11 +332,21 @@
 
         <!-- Step 3 -->
         <div
-          class="card bg-base-100/50 border border-base-content/10 p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"
+          class="card bg-base-100/50 border border-base-content/10 p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 group"
         >
-          <div class="text-4xl mb-4">3️⃣</div>
-          <h3 class="text-xl font-bold mb-2 text-white">Automação integrada</h3>
-          <p class="text-sm opacity-70 leading-relaxed">
+          <div
+            class="text-7xl mb-4 font-accent font-black italic bg-gradient-to-br from-primary/80 to-info/80 bg-clip-text text-transparent"
+          >
+            03
+          </div>
+          <h3
+            class="text-xl font-bold mb-2 text-white group-hover:text-primary transition-colors duration-300"
+          >
+            Automação integrada
+          </h3>
+          <p
+            class="text-sm opacity-70 leading-relaxed group-hover:opacity-100 transition-opacity duration-300"
+          >
             Leads entram direto no fluxo certo (WhatsApp, CRM ou e-mail). Sem
             processo manual. Sem improviso.
           </p>
@@ -324,13 +354,21 @@
 
         <!-- Step 4 -->
         <div
-          class="card bg-base-100/50 border border-base-content/10 p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"
+          class="card bg-base-100/50 border border-base-content/10 p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 group"
         >
-          <div class="text-4xl mb-4">4️⃣</div>
-          <h3 class="text-xl font-bold mb-2 text-white">
+          <div
+            class="text-7xl mb-4 font-accent font-black italic bg-gradient-to-br from-primary/80 to-info/80 bg-clip-text text-transparent"
+          >
+            04
+          </div>
+          <h3
+            class="text-xl font-bold mb-2 text-white group-hover:text-primary transition-colors duration-300"
+          >
             Entrega clara e validável
           </h3>
-          <p class="text-sm opacity-70 leading-relaxed">
+          <p
+            class="text-sm opacity-70 leading-relaxed group-hover:opacity-100 transition-opacity duration-300"
+          >
             Projeto ágil, escopo definido e foco em performance.
           </p>
         </div>
