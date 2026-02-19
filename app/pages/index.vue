@@ -51,7 +51,7 @@
       <div
         class="badge badge-primary badge-outline mb-6 py-3 px-4 font-bold text-sm tracking-wider"
       >
-        Processo rápido e sem burocracia
+        Processo rápido e sem burocracia 🚀
       </div>
 
       <h1
@@ -91,7 +91,7 @@
           <i class="fa-solid fa-arrow-right ml-2"></i>
         </a>
         <p class="text-sm opacity-50 mt-4 md:mt-0 font-medium">
-          Rápido, direto e sem tomar o seu tempo.
+          Rápido, direto e sem tomar o seu tempo ⏰
         </p>
       </div>
     </header>
@@ -157,124 +157,13 @@
     </div>
   </section>
 
-  <!-- The Problem -->
+  <!-- Cases Section -->
   <section
-    class="relative z-10 py-20 bg-gradient-to-br from-base-200 via-base-300 to-base-200 text-base-content border-y border-base-content/5 overflow-hidden"
+    class="py-20 md:py-32 bg-base-100 text-base-content relative z-10 border-b border-base-content/5 overflow-hidden"
   >
-    <!-- Background Effect -->
-    <div
-      class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none"
-    >
-      <div
-        class="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-primary/5 blur-[100px] rounded-full"
-      ></div>
-    </div>
-
-    <div class="max-w-6xl mx-auto md:px-6 px-4 relative z-10">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-          Se seu site não traz
-          <span
-            class="bg-gradient-to-r from-primary to-info bg-clip-text text-transparent font-accent italic"
-            >oportunidades</span
-          >, <br class="hidden md:block" />ele não está cumprindo o papel dele.
-        </h2>
-      </div>
-
-      <div class="grid md:grid-cols-4 gap-6">
-        <div
-          class="card bg-base-100/50 backdrop-blur-md border border-base-content/5 hover:border-primary/50 hover:shadow-[0_0_30px_color-mix(in_srgb,var(--color-primary)_15%,transparent)] transition-all duration-300"
-        >
-          <div class="card-body items-center text-center">
-            <div
-              class="w-16 h-16 rounded-full bg-base-300/50 flex items-center justify-center mb-4 text-3xl"
-            >
-              😵
-            </div>
-            <h3 class="font-bold text-lg mb-2">Site institucional parado</h3>
-            <p class="text-sm opacity-60">
-              Bonito, mas não gera nenhum contato novo.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="card bg-base-100/50 backdrop-blur-md border border-base-content/5 hover:border-primary/50 hover:shadow-[0_0_30px_color-mix(in_srgb,var(--color-primary)_15%,transparent)] transition-all duration-300"
-        >
-          <div class="card-body items-center text-center">
-            <div
-              class="w-16 h-16 rounded-full bg-base-300/50 flex items-center justify-center mb-4 text-3xl"
-            >
-              📉
-            </div>
-            <h3 class="font-bold text-lg mb-2">Tráfego que não vira lead</h3>
-            <p class="text-sm opacity-60">
-              Visitantes entram e saem sem deixar interesse.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="card bg-base-100/50 backdrop-blur-md border border-base-content/5 hover:border-primary/50 hover:shadow-[0_0_30px_color-mix(in_srgb,var(--color-primary)_15%,transparent)] transition-all duration-300"
-        >
-          <div class="card-body items-center text-center">
-            <div
-              class="w-16 h-16 rounded-full bg-base-300/50 flex items-center justify-center mb-4 text-3xl"
-            >
-              🤯
-            </div>
-            <h3 class="font-bold text-lg mb-2">Tudo no improviso</h3>
-            <p class="text-sm opacity-60">
-              Leads perdidos por falta de gestão e follow-up.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="card bg-base-100/50 backdrop-blur-md border border-base-content/5 hover:border-primary/50 hover:shadow-[0_0_30px_color-mix(in_srgb,var(--color-primary)_15%,transparent)] transition-all duration-300"
-        >
-          <div class="card-body items-center text-center">
-            <div
-              class="w-16 h-16 rounded-full bg-base-300/50 flex items-center justify-center mb-4 text-3xl"
-            >
-              🐢
-            </div>
-            <h3 class="font-bold text-lg mb-2">Processos manuais</h3>
-            <p class="text-sm opacity-60">
-              Vendas travadas por burocracia e lentidão.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center mt-12 max-w-2xl mx-auto">
-        <p class="text-lg font-medium italic opacity-80">
-          Todo mundo 'faz site'. Poucos pensam em jornada, oferta e automação.
-          <br class="hidden md:block" />Vamos mudar isso?
-        </p>
-      </div>
-      <div class="flex flex-col items-center justify-center gap-4 mt-12">
-        <a
-          href="#cta"
-          class="w-full md:w-auto btn rounded-full border-none bg-gradient-to-r from-primary to-info hover:brightness-110 text-white btn-lg px-2 md:px-12 text-base md:text-lg h-auto py-2 shadow-[0_0_20px_color-mix(in_srgb,var(--color-primary)_30%,transparent)]"
-        >
-          Quero trazer mais oportunidades
-          <i class="fa-solid fa-arrow-right ml-2"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- What We Do -->
-  <section
-    class="relative z-10 py-20 md:py-32 bg-base-100 text-base-content overflow-hidden border-b border-base-content/5"
-  >
-    <!-- Background Glow -->
-    <div
-      class="absolute right-0 top-1/4 w-[500px] h-[500px] bg-secondary/10 blur-[100px] rounded-full pointer-events-none mix-blend-screen"
-    ></div>
     <div class="max-w-6xl mx-auto md:px-6 px-4">
       <div class="flex flex-col md:flex-row gap-16 items-center">
+        <!-- Content List -->
         <div class="md:w-1/2">
           <h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight">
             O que fazemos <br />
@@ -283,273 +172,122 @@
               >(de verdade)</span
             >
           </h2>
-          <div class="space-y-8">
-            <div class="flex gap-4">
-              <div
-                class="mt-1 w-10 h-10 shrink-0 bg-base-300/50 flex items-center justify-center text-primary"
-              >
-                <i class="fa-solid fa-layer-group"></i>
-              </div>
-              <div>
-                <h3 class="text-xl font-bold mb-1">
-                  Sites pensados para conversão
-                </h3>
-                <p class="opacity-70">
-                  Não é só layout. É copy, estrutura e CTA certo no lugar certo.
-                </p>
-              </div>
-            </div>
+          <p class="text-lg opacity-70 leading-relaxed mb-10">
+            Do design ao processo completo: logo, branding, experiência do
+            usuário, SEO, métricas, formulários, conversões, automações e
+            processos.
+          </p>
 
-            <div class="flex gap-4">
-              <div
-                class="mt-1 w-10 h-10 shrink-0 bg-base-300/50 flex items-center justify-center text-primary"
-              >
-                <i class="fa-solid fa-magnet"></i>
-              </div>
-              <div>
-                <h3 class="text-xl font-bold mb-1">
-                  Captação de leads automática
-                </h3>
-                <p class="opacity-70">
-                  Formulários, WhatsApp, CRM, e-mails e integrações funcionando
-                  juntos.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex gap-4">
-              <div
-                class="mt-1 w-10 h-10 shrink-0 bg-base-300/50 flex items-center justify-center text-primary"
-              >
-                <i class="fa-solid fa-robot"></i>
-              </div>
-              <div>
-                <h3 class="text-xl font-bold mb-1">Automação de processos</h3>
-                <p class="opacity-70">
-                  Menos trabalho manual. Mais tempo para focar no que importa.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex gap-4">
-              <div
-                class="mt-1 w-10 h-10 shrink-0 bg-base-300/50 flex items-center justify-center text-primary"
-              >
-                <i class="fa-solid fa-trophy"></i>
-              </div>
-              <div>
-                <h3 class="text-xl font-bold mb-1">
-                  Foco em resultado, não em criar um site
-                </h3>
-                <p class="opacity-70">
-                  Cada página tem um objetivo claro: otimizar para melhorar a
-                  experiência do usuário e as conversões.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-10">
-            <a
-              href="#cta"
-              class="btn border-none rounded-full bg-gradient-to-r from-primary to-info hover:brightness-110 text-white px-8 shadow-[0_0_20px_color-mix(in_srgb,var(--color-primary)_30%,transparent)]"
+          <div class="space-y-6">
+            <div
+              v-for="(caseItem, index) in cases"
+              :key="index"
+              class="group flex gap-4 cursor-pointer p-4 rounded-xl transition-all duration-300 hover:bg-base-200/50"
+              :class="{
+                'bg-base-200 shadow-sm ring-1 ring-base-content/5':
+                  currentCaseIndex === index,
+                'opacity-60 hover:opacity-100': currentCaseIndex !== index,
+              }"
+              @click="currentCaseIndex = index"
             >
-              Ver se isso serve pra mim
-            </a>
+              <div
+                class="mt-1 w-12 h-12 shrink-0 rounded-full flex items-center justify-center transition-colors duration-300"
+                :class="
+                  currentCaseIndex === index
+                    ? 'bg-primary text-primary-content'
+                    : 'bg-base-300/50 text-base-content/50 group-hover:text-primary group-hover:bg-primary/10'
+                "
+              >
+                <i :class="caseItem.icon" class="text-lg"></i>
+              </div>
+              <div>
+                <h3
+                  class="text-xl font-bold mb-1 transition-colors duration-300"
+                  :class="{ 'text-primary': currentCaseIndex === index }"
+                >
+                  {{ caseItem.case || caseItem.title }}
+                </h3>
+                <p class="opacity-70 text-sm leading-relaxed">
+                  {{ caseItem.description }}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
+        <!-- Image Display -->
         <div class="md:w-1/2 w-full">
-          <!-- Cases Image Switcher -->
           <div class="cases-switcher">
             <div
-              v-for="(img, i) in caseImages"
-              :key="img"
+              v-for="(item, i) in cases"
+              :key="i"
               class="cases-slide"
               :class="{ active: i === currentCaseIndex }"
             >
-              <img :src="img" :alt="'Case ' + (i + 1)" class="cases-img" />
-            </div>
-            <!-- Dots -->
-            <div class="cases-dots">
-              <button
-                v-for="(img, i) in caseImages"
-                :key="'dot-' + i"
-                class="cases-dot"
-                :class="{ active: i === currentCaseIndex }"
-                @click="currentCaseIndex = i"
-              />
+              <div
+                class="relative rounded-2xl overflow-hidden shadow-2xl border border-base-content/10 bg-base-200 aspect-video"
+              >
+                <img
+                  :src="item.image"
+                  :alt="item.title"
+                  class="w-full h-full object-cover object-top"
+                />
+                <!-- Overlay Gradient -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-base-300/80 via-transparent to-transparent opacity-60"
+                ></div>
+                <!-- Tag -->
+                <div class="absolute bottom-6 left-6">
+                  <span
+                    class="badge badge-primary border-none text-primary-content font-bold shadow-lg"
+                  >
+                    {{ item.title }}
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="mt-10">
+        <a
+          href="#cta"
+          class="btn border-none rounded-full bg-gradient-to-r from-primary to-info hover:brightness-110 text-white px-8 shadow-[0_0_20px_color-mix(in_srgb,var(--color-primary)_30%,transparent)]"
+        >
+          Também quero um projeto <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- Method -->
+  <!-- Foco em Resultado -->
   <section
-    class="py-20 bg-gradient-to-t from-base-200 to-base-100 text-base-content relative z-10 border-b border-base-content/5"
+    class="py-24 bg-gradient-to-b from-base-200 to-base-100 text-base-content relative z-10 text-center border-b border-base-content/5"
   >
-    <div class="max-w-6xl mx-auto md:px-6 px-4">
-      <h2 class="text-3xl md:text-5xl font-bold text-center mb-16">
-        Como funciona nosso método
-      </h2>
-
-      <div class="grid md:grid-cols-4 gap-8">
-        <div class="relative group">
-          <div
-            class="absolute -top-4 -left-4 text-8xl font-black opacity-5 z-0 select-none text-white/10"
-          >
-            1
-          </div>
-          <div
-            class="relative z-10 bg-base-100/60 backdrop-blur-md text-base-content p-6 border-t-8 border-primary h-full transition-transform duration-300 hover:-translate-y-2 border border-base-content/5 shadow-lg"
-          >
-            <h3 class="text-xl font-bold mb-3">Diagnóstico rápido</h3>
-            <p class="opacity-70 text-sm">
-              Entendemos seu negócio, oferta e objetivo (lead ou venda).
-            </p>
-          </div>
-        </div>
-
-        <div class="relative group">
-          <div
-            class="absolute -top-4 -left-4 text-8xl font-black opacity-5 z-0 select-none text-white/10"
-          >
-            2
-          </div>
-          <div
-            class="relative z-10 bg-base-100/60 backdrop-blur-md text-base-content p-6 border-t-8 border-secondary h-full transition-transform duration-300 hover:-translate-y-2 border border-base-content/5 shadow-lg"
-          >
-            <h3 class="text-xl font-bold mb-3">Estrutura de conversão</h3>
-            <p class="opacity-70 text-sm">
-              Criamos a página com copy estratégica + design funcional.
-            </p>
-          </div>
-        </div>
-
-        <div class="relative group">
-          <div
-            class="absolute -top-4 -left-4 text-8xl font-black opacity-5 z-0 select-none text-white/10"
-          >
-            3
-          </div>
-          <div
-            class="relative z-10 bg-base-100/60 backdrop-blur-md text-base-content p-6 border-t-8 border-accent h-full transition-transform duration-300 hover:-translate-y-2 border border-base-content/5 shadow-lg"
-          >
-            <h3 class="text-xl font-bold mb-3">Automação integrada</h3>
-            <p class="opacity-70 text-sm">
-              Leads caem direto no fluxo certo (WhatsApp, CRM ou e-mail).
-            </p>
-          </div>
-        </div>
-
-        <div class="relative group">
-          <div
-            class="absolute -top-4 -left-4 text-8xl font-black opacity-5 z-0 select-none text-white/10"
-          >
-            4
-          </div>
-          <div
-            class="relative z-10 bg-base-100/60 backdrop-blur-md text-base-content p-6 border-t-8 border-primary h-full transition-transform duration-300 hover:-translate-y-2 border border-base-content/5 shadow-lg"
-          >
-            <h3 class="text-xl font-bold mb-3">Entrega sem enrolação</h3>
-            <p class="opacity-70 text-sm">Projeto ágil, claro e validável.</p>
-          </div>
-        </div>
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(var(--color-primary),0.05)_0%,transparent_70%)] pointer-events-none"
+    ></div>
+    <div class="max-w-3xl mx-auto px-6 relative z-10">
+      <h2 class="text-3xl md:text-5xl font-black mb-10">Foco em resultado</h2>
+      <div class="space-y-6 text-lg md:text-xl opacity-80 leading-relaxed">
+        <p>
+          Nada de reunião desnecessária.
+          <br />
+          Nada de falar com “especialista”.
+        </p>
+        <p class="font-medium text-base-content">
+          Você solicita.
+          <br />
+          Nós enviamos o valor + escopo claro do que será feito.
+        </p>
+        <p
+          class="font-bold bg-gradient-to-r from-primary to-info bg-clip-text text-transparent text-2xl mt-8"
+        >
+          Sem enrolação.
+        </p>
       </div>
     </div>
   </section>
-
-  <!-- Audience & Why Us Split -->
-  <section
-    class="py-20 bg-gradient-to-b from-base-100 to-base-200 text-base-content relative z-10"
-  >
-    <div class="max-w-7xl mx-auto md:px-6 px-4">
-      <div class="grid md:grid-cols-2 gap-12">
-        <!-- Audience -->
-        <div>
-          <h2 class="text-3xl font-bold mb-8">Para quem é a Apptime</h2>
-          <ul class="space-y-4 mb-8">
-            <li class="flex items-center gap-3 text-lg">
-              <i class="fa-solid fa-circle-check text-primary"></i> Pequenos e
-              médios negócios
-            </li>
-            <li class="flex items-center gap-3 text-lg">
-              <i class="fa-solid fa-circle-check text-primary"></i> Prestadores
-              de serviço
-            </li>
-            <li class="flex items-center gap-3 text-lg">
-              <i class="fa-solid fa-circle-check text-primary"></i> Agências e
-              profissionais digitais
-            </li>
-            <li class="flex items-center gap-3 text-lg">
-              <i class="fa-solid fa-circle-check text-primary"></i> Quem quer
-              vender mais sem complicar o processo
-            </li>
-          </ul>
-
-          <div
-            class="bg-base-100/50 backdrop-blur-sm p-6 border-l-8 border-primary mb-8 border border-base-content/5 rounded-r-lg"
-          >
-            <p class="mb-2">
-              🤔 <strong>Se você quer só "um site bonito"</strong>,
-              provavelmente não somos pra você.
-            </p>
-            <p
-              class="font-bold bg-gradient-to-r from-primary to-info bg-clip-text text-transparent"
-            >
-              😎 Se você quer resultado, somos.
-            </p>
-          </div>
-        </div>
-
-        <!-- Why Us -->
-        <div>
-          <h2 class="text-3xl font-bold mb-8">Por que escolher a Apptime?</h2>
-          <div class="grid sm:grid-cols-2 gap-4 mb-8">
-            <div
-              class="p-4 bg-base-100/50 hover:bg-base-200/50 border border-base-content/5 transition-all rounded-lg"
-            >
-              <div class="text-3xl mb-2">🚀</div>
-              <h4 class="font-bold mb-1">Sistema de vendas</h4>
-              <p class="text-sm opacity-70">
-                Não criamos site. Criamos sistemas que convertem.
-              </p>
-            </div>
-            <div
-              class="p-4 bg-base-100/50 hover:bg-base-200/50 border border-base-content/5 transition-all rounded-lg"
-            >
-              <div class="text-3xl mb-2">⚙️</div>
-              <h4 class="font-bold mb-1">Automação total</h4>
-              <p class="text-sm opacity-70">
-                Automação configurada desde o primeiro contato.
-              </p>
-            </div>
-            <div
-              class="p-4 bg-base-100/50 hover:bg-base-200/50 border border-base-content/5 transition-all rounded-lg"
-            >
-              <div class="text-3xl mb-2">📊</div>
-              <h4 class="font-bold mb-1">Foco em dados</h4>
-              <p class="text-sm opacity-70">
-                Tudo pensado para melhorar sua conversão.
-              </p>
-            </div>
-            <div
-              class="p-4 bg-base-100/50 hover:bg-base-200/50 border border-base-content/5 transition-all rounded-lg"
-            >
-              <div class="text-3xl mb-2">🇧🇷</div>
-              <h4 class="font-bold mb-1">Sem lero-lero</h4>
-              <p class="text-sm opacity-70">
-                Linguagem simples, prática e sem marketing vazio.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Websites Showcase Carousel -->
   <section
     class="pb-10 bg-base-200 text-base-content border-b border-base-content/5 overflow-hidden"
@@ -578,24 +316,46 @@
 <script setup>
 import { computed, onMounted, onUnmounted, ref } from 'vue';
 
-// ── Cases image switcher ──────────────────────────────────────────────────────
-const caseImages = [
-  '/images/cases/app-store-analytics.png',
-  '/images/cases/apptime-funnel.png',
-  '/images/cases/cathedra-forms.png',
-  '/images/cases/cns-forms.png',
-  '/images/cases/copy-oferta.png',
-  '/images/cases/copy-pao-caseiro.png',
-  '/images/cases/forus-google-play.png',
-  '/images/cases/google-analytics-chart.png',
-  '/images/cases/google-analytics-funnel.png',
-  '/images/cases/loupeloupe-1.png',
-  '/images/cases/loupeloupe-2.png',
-  '/images/cases/souzalima-maps-whatsapp.png',
+const currentCaseIndex = ref(0);
+
+const cases = [
+  {
+    title: 'Captação de Leads',
+    icon: 'fa-regular fa-id-card',
+    description: 'Formulário estratégico para captação de milhares de leads.',
+    image: '/images/cases/cns-forms.png',
+  },
+  {
+    title: 'Ranking no Google',
+    icon: 'fa-solid fa-map-location-dot',
+    description:
+      'Site institucional com SEO otimizado para aparecer no Google, Google Meu Negócio e Google Maps.',
+    image: '/images/cases/souzalima-maps-whatsapp.png',
+  },
+  {
+    title: 'Venda e Entrega de Produtos',
+    icon: 'fa-solid fa-bag-shopping',
+    description:
+      'E-commerce com envio de email marketing, gestão de estoque, integração com fretes e geração de notas fiscais.',
+    image: '/images/cases/loupeloupe-1.png',
+  },
+  {
+    title: 'Conversão para Páginas',
+    icon: 'fa-solid fa-bullhorn',
+    description:
+      'Landing page personalizada para conversão direta de leads qualificados.',
+    image: '/images/cases/cathedra-forms.png',
+  },
+  {
+    title: 'App com Alto Tráfego',
+    icon: 'fa-solid fa-mobile-screen-button',
+    description:
+      'Plataforma + App com experiência do usuário fluída e milhares de acessos e downloads.',
+    image: '/images/cases/forus-google-play.png',
+  },
 ];
 
-const currentCaseIndex = ref(0);
-let caseTimer = null;
+const caseImages = computed(() => cases.map((c) => c.image));
 
 // ── Websites carousel ─────────────────────────────────────────────────────────
 const websiteImages = [
@@ -623,10 +383,6 @@ const totalWidth = computed(() => websiteImages.length * ITEM_WIDTH);
 let websiteTimer = null;
 
 onMounted(() => {
-  // Cases: switch every 2.5s
-  caseTimer = setInterval(() => {
-    currentCaseIndex.value = (currentCaseIndex.value + 1) % caseImages.length;
-  }, 2500);
   // Website carousel: smooth RAF loop
   let lastTime = null;
   function animate(ts) {
@@ -645,7 +401,6 @@ onMounted(() => {
 });
 
 onUnmounted(() => {
-  clearInterval(caseTimer);
   cancelAnimationFrame(websiteTimer);
 });
 </script>
@@ -735,56 +490,59 @@ onUnmounted(() => {
 .cases-switcher {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  border: 4px solid var(--color-base-300);
-  background: var(--color-base-200);
+  aspect-ratio: 16 / 10;
 }
 
 .cases-slide {
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: opacity 0.7s ease;
+  transform: scale(0.95) translateY(10px);
+  transition:
+    opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cases-slide.active {
   opacity: 1;
-}
-
-.cases-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  transform: scale(1) translateY(0);
+  z-index: 20;
 }
 
 .cases-dots {
-  position: absolute;
-  bottom: 12px;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
-  gap: 6px;
-  z-index: 10;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 .cases-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: color-mix(in srgb, var(--color-base-content) 30%, transparent);
-  border: none;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  background-color: color-mix(
+    in srgb,
+    var(--color-base-content) 20%,
+    transparent
+  );
+  transition: all 0.3s ease;
   cursor: pointer;
-  transition:
-    background 0.3s ease,
-    transform 0.3s ease;
-  padding: 0;
 }
 
 .cases-dot.active {
-  background: var(--color-primary);
-  transform: scale(1.3);
+  background-color: var(--color-primary);
+  transform: scale(1.2);
+}
+
+.cases-img {
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
 /* ── Websites Carousel ──────────────────────────────────────────────────────── */

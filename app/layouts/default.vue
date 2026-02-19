@@ -83,10 +83,10 @@ onUnmounted(() => {
 
       <div class="relative z-10 max-w-4xl mx-auto">
         <h2 class="text-4xl md:text-6xl font-black mb-6">
-          Pronto para transformar seu site em uma máquina de oportunidades?
+          Pronto para ter um site que gera resultado?
         </h2>
         <p class="text-xl md:text-2xl opacity-70 mb-10">
-          Descubra como podemos criar um site que realmente trabalha por você.
+          Solicite agora e receba sua proposta completa.
         </p>
 
         <div class="flex flex-col items-center gap-6">
@@ -95,7 +95,7 @@ onUnmounted(() => {
             target="_blank"
             class="btn border-none rounded-full bg-gradient-to-r from-primary to-info hover:brightness-110 text-white btn-lg px-12 py-4 h-auto text-xl font-bold shadow-[0_0_30px_color-mix(in_srgb,var(--color-primary)_30%,transparent)] transition-all hover:scale-105 hover:shadow-[0_0_50px_color-mix(in_srgb,var(--color-primary)_50%,transparent)]"
           >
-            Começar um projeto agora
+            Quero meu projeto
             <i class="fa-solid fa-arrow-right ml-2"></i>
           </a>
         </div>
