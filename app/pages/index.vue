@@ -168,11 +168,11 @@
           <h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight">
             O que fazemos <br />
             <span
-              class="bg-gradient-to-r from-primary to-info bg-clip-text text-transparent font-accent italic lowercase"
+              class="bg-gradient-to-r pr-2 from-primary to-info bg-clip-text text-transparent font-accent italic lowercase"
               >(de verdade)</span
             >
           </h2>
-          <p class="text-lg opacity-70 leading-relaxed mb-10">
+          <p class="text-base opacity-70 leading-relaxed mb-10">
             Do design ao processo completo: logo, branding, experiência do
             usuário, SEO, métricas, formulários, conversões, automações e
             processos.
@@ -207,16 +207,27 @@
                 >
                   {{ caseItem.case || caseItem.title }}
                 </h3>
-                <p class="opacity-70 text-sm leading-relaxed">
+                <p class="opacity-70 text-base font-regular leading-relaxed">
                   {{ caseItem.description }}
                 </p>
+                <!-- Mobile Image Display -->
+                <div
+                  v-if="currentCaseIndex === index"
+                  class="mt-4 relative rounded-xl overflow-hidden shadow-lg border border-base-content/10 bg-base-200 aspect-video md:hidden"
+                >
+                  <img
+                    :src="caseItem.image"
+                    :alt="caseItem.title"
+                    class="w-full h-full object-cover object-top"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Image Display -->
-        <div class="md:w-1/2 w-full">
+        <div class="md:w-1/2 w-full hidden md:block">
           <div class="cases-switcher">
             <div
               v-for="(item, i) in cases"
@@ -232,18 +243,6 @@
                   :alt="item.title"
                   class="w-full h-full object-cover object-top"
                 />
-                <!-- Overlay Gradient -->
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-base-300/80 via-transparent to-transparent opacity-60"
-                ></div>
-                <!-- Tag -->
-                <div class="absolute bottom-6 left-6">
-                  <span
-                    class="badge badge-primary border-none text-primary-content font-bold shadow-lg"
-                  >
-                    {{ item.title }}
-                  </span>
-                </div>
               </div>
             </div>
           </div>
