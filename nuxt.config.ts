@@ -10,31 +10,31 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: {
-        lang: 'en',
+        lang: 'pt-BR',
         'data-theme': 'apptime',
       },
-      title: 'Apptime Agency | Do Site ao Resultado',
+      title: 'Apptime | Todo mundo cria sites. Nós criamos resultados.',
       meta: [
         { charset: 'UTF-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
         {
           name: 'description',
           content:
-            'Chega de site bonito que não gera resultado. A Apptime cria sites de alta conversão integrados com automação para transformar visitantes em clientes.',
+            'Rápido atendimento, criação estratégica e foco em conversão para transformar o seu site em um sistema que funciona. Nós criamos resultados.',
         },
         {
           name: 'keywords',
           content:
-            'Apptime Agency, Criação de Sites, Agência de Marketing, Automação, Design Estratégico, Alta Conversão, CRM, Vendas',
+            'Apptime, Criação de Sites, Branding, UX, SEO, Automação, Conversão, Landing Page, Tráfego Pago, Design Estratégico, Sistemas Web',
         },
         {
           property: 'og:title',
-          content: 'Apptime Agency | Do Site ao Resultado',
+          content: 'Apptime | Todo mundo cria sites. Nós criamos resultados.',
         },
         {
           property: 'og:description',
           content:
-            'Chega de site bonito que não gera resultado. A Apptime cria sites de alta conversão integrados com automação para transformar visitantes em clientes.',
+            'Rápido atendimento, criação estratégica e foco em conversão para transformar o seu site em um sistema que funciona. Nós criamos resultados.',
         },
         {
           property: 'og:image',
@@ -43,12 +43,12 @@ export default defineNuxtConfig({
         { name: 'twitter:card', content: 'summary_large_image' },
         {
           name: 'twitter:title',
-          content: 'Apptime Agency | Do Site ao Resultado',
+          content: 'Apptime | Todo mundo cria sites. Nós criamos resultados.',
         },
         {
           name: 'twitter:description',
           content:
-            'Chega de site bonito que não gera resultado. A Apptime cria sites de alta conversão integrados com automação para transformar visitantes em clientes.',
+            'Rápido atendimento, criação estratégica e foco em conversão para transformar o seu site em um sistema que funciona. Nós criamos resultados.',
         },
         {
           name: 'twitter:image',
