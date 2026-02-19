@@ -59,7 +59,7 @@
       >
         Todo mundo cria sites. <br />
         <span
-          class="block mt-2 bg-gradient-to-r from-primary to-info bg-clip-text text-transparent font-accent italic text-3xl md:text-6xl pb-4"
+          class="block mt-2 bg-gradient-to-r from-primary to-info bg-clip-text text-transparent font-accent italic text-3xl md:text-6xl pb-4 pr-4"
         >
           Nós criamos resultados.
         </span>
@@ -176,7 +176,7 @@
           <h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight">
             O que fazemos <br />
             <span
-              class="bg-gradient-to-r pr-2 from-primary to-info bg-clip-text text-transparent font-accent italic lowercase"
+              class="bg-gradient-to-r from-primary to-info bg-clip-text text-transparent font-accent italic lowercase pb-2 pr-4 inline-block"
               >(de verdade)</span
             >
           </h2>
@@ -281,7 +281,7 @@
         <h2 class="text-3xl md:text-5xl font-black mb-6">
           Processo
           <span
-            class="bg-gradient-to-r from-primary font-accent italic pr-2 to-info bg-clip-text text-transparent"
+            class="bg-gradient-to-r from-primary font-accent italic to-info bg-clip-text text-transparent pb-2 pr-4 inline-block"
             >direto ao ponto</span
           >
         </h2>
@@ -300,7 +300,7 @@
           class="card bg-base-100/50 border border-base-content/10 p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 group"
         >
           <div
-            class="text-7xl mb-4 font-accent font-black italic bg-gradient-to-br from-primary/80 to-info/80 bg-clip-text text-transparent"
+            class="text-7xl mb-4 font-accent font-black italic bg-gradient-to-br from-primary/80 to-info/80 bg-clip-text text-transparent pb-2 pr-3"
           >
             01
           </div>
@@ -321,7 +321,7 @@
           class="card bg-base-100/50 border border-base-content/10 p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 group"
         >
           <div
-            class="text-7xl mb-4 font-accent font-black italic bg-gradient-to-br from-primary/80 to-info/80 bg-clip-text text-transparent"
+            class="text-7xl mb-4 font-accent font-black italic bg-gradient-to-br from-primary/80 to-info/80 bg-clip-text text-transparent pb-2 pr-3"
           >
             02
           </div>
@@ -343,7 +343,7 @@
           class="card bg-base-100/50 border border-base-content/10 p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 group"
         >
           <div
-            class="text-7xl mb-4 font-accent font-black italic bg-gradient-to-br from-primary/80 to-info/80 bg-clip-text text-transparent"
+            class="text-7xl mb-4 font-accent font-black italic bg-gradient-to-br from-primary/80 to-info/80 bg-clip-text text-transparent pb-2 pr-3"
           >
             03
           </div>
@@ -365,7 +365,7 @@
           class="card bg-base-100/50 border border-base-content/10 p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 group"
         >
           <div
-            class="text-7xl mb-4 font-accent font-black italic bg-gradient-to-br from-primary/80 to-info/80 bg-clip-text text-transparent"
+            class="text-7xl mb-4 font-accent font-black italic bg-gradient-to-br from-primary/80 to-info/80 bg-clip-text text-transparent pb-2 pr-3"
           >
             04
           </div>
