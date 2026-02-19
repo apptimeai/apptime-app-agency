@@ -213,7 +213,7 @@
                 <!-- Mobile Image Display -->
                 <div
                   v-if="currentCaseIndex === index"
-                  class="mt-4 relative rounded-xl overflow-hidden shadow-lg border border-base-content/10 bg-base-200 aspect-video md:hidden"
+                  class="mt-4 relative rounded-xl overflow-hidden shadow-lg border border-base-content/10 bg-base-200 aspect-square md:hidden"
                 >
                   <img
                     :src="caseItem.image"
@@ -236,7 +236,7 @@
               :class="{ active: i === currentCaseIndex }"
             >
               <div
-                class="relative rounded-2xl overflow-hidden shadow-2xl border border-base-content/10 bg-base-200 aspect-video"
+                class="relative rounded-2xl overflow-hidden shadow-2xl border border-base-content/10 bg-base-200 aspect-square"
               >
                 <img
                   :src="item.image"
@@ -387,35 +387,35 @@ const cases = [
     title: 'Captação de Leads',
     icon: 'fa-regular fa-id-card',
     description: 'Formulário estratégico para captação de milhares de leads.',
-    image: '/images/cases/cns-forms.png',
+    image: '/images/cases/captacao-de-leads.png',
   },
   {
     title: 'Ranking no Google',
     icon: 'fa-solid fa-map-location-dot',
     description:
       'Site institucional com SEO otimizado para aparecer no Google, Google Meu Negócio e Google Maps.',
-    image: '/images/cases/souzalima-maps-whatsapp.png',
+    image: '/images/cases/ranking-no-seo-e-whatsapp.png',
   },
   {
     title: 'Venda e Entrega de Produtos',
     icon: 'fa-solid fa-bag-shopping',
     description:
       'E-commerce com envio de email marketing, gestão de estoque, integração com fretes e geração de notas fiscais.',
-    image: '/images/cases/loupeloupe-1.png',
+    image: '/images/cases/venda-e-entrega-de-produtos.png',
   },
   {
     title: 'Conversão para Páginas',
     icon: 'fa-solid fa-bullhorn',
     description:
       'Landing page personalizada para conversão direta de leads qualificados.',
-    image: '/images/cases/cathedra-forms.png',
+    image: '/images/cases/conversao-para-paginas.png',
   },
   {
     title: 'App com Alto Tráfego',
     icon: 'fa-solid fa-mobile-screen-button',
     description:
       'Plataforma + App com experiência do usuário fluída e milhares de acessos e downloads.',
-    image: '/images/cases/forus-google-play.png',
+    image: '/images/cases/app-com-alto-trafego.png',
   },
 ];
 
@@ -554,7 +554,7 @@ onUnmounted(() => {
 .cases-switcher {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 1 / 1;
 }
 
 .cases-slide {

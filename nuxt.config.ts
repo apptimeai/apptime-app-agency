@@ -36,6 +36,10 @@ export default defineNuxtConfig({
           content:
             'Chega de site bonito que não gera resultado. A Apptime cria sites de alta conversão integrados com automação para transformar visitantes em clientes.',
         },
+        {
+          property: 'og:image',
+          content: '/og-image.jpg',
+        },
         { name: 'twitter:card', content: 'summary_large_image' },
         {
           name: 'twitter:title',
@@ -45,6 +49,10 @@ export default defineNuxtConfig({
           name: 'twitter:description',
           content:
             'Chega de site bonito que não gera resultado. A Apptime cria sites de alta conversão integrados com automação para transformar visitantes em clientes.',
+        },
+        {
+          name: 'twitter:image',
+          content: '/og-image.jpg',
         },
       ],
       link: [
