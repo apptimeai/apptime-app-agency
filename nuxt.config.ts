@@ -75,6 +75,7 @@ export default defineNuxtConfig({
       script: [
         {
           src: 'https://cdn.apptime.app/apptime.js',
+          async: true,
         },
         {
           src: 'https://www.googletagmanager.com/gtag/js?id=G-XNJN8N72CW',
