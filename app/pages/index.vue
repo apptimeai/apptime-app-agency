@@ -259,30 +259,95 @@
     </div>
   </section>
 
-  <!-- Foco em Resultado -->
+  <!-- Processo Direto ao Ponto -->
   <section
-    class="py-24 bg-gradient-to-b from-base-200 to-base-100 text-base-content relative z-10 text-center border-b border-base-content/5"
+    class="py-24 bg-gradient-to-b from-base-200 to-base-100 text-base-content relative z-10 border-b border-base-content/5"
   >
     <div
       class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(var(--color-primary),0.05)_0%,transparent_70%)] pointer-events-none"
     ></div>
-    <div class="max-w-3xl mx-auto px-6 relative z-10">
-      <h2 class="text-3xl md:text-5xl font-black mb-10">Foco em resultado</h2>
-      <div class="space-y-6 text-lg md:text-xl opacity-80 leading-relaxed">
-        <p>
-          Nada de reunião desnecessária.
-          <br />
-          Nada de falar com “especialista”.
+
+    <div class="max-w-6xl mx-auto px-6 relative z-10">
+      <!-- Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-5xl font-black mb-6">
+          Processo direto ao ponto
+        </h2>
+        <p class="text-lg md:text-xl opacity-80 leading-relaxed">
+          Você não precisa de reunião desnecessária nem de “especialista”
+          vendendo promessa. Você solicita e nós enviamos o
+          <span class="text-primary font-bold">valor + escopo claro</span> do
+          que será feito, sem enrolação.
         </p>
-        <p class="font-medium text-base-content">
-          Você solicita.
-          <br />
-          Nós enviamos o valor + escopo claro do que será feito.
-        </p>
-        <p
-          class="font-bold bg-gradient-to-r from-primary to-info bg-clip-text text-transparent text-2xl mt-8"
+      </div>
+
+      <!-- Steps Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <!-- Step 1 -->
+        <div
+          class="card bg-base-100/50 border border-base-content/10 p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"
         >
-          Sem enrolação.
+          <div class="text-4xl mb-4">1️⃣</div>
+          <h3 class="text-xl font-bold mb-2 text-white">
+            Diagnóstico objetivo
+          </h3>
+          <p class="text-sm opacity-70 leading-relaxed">
+            Entendemos seu negócio e definimos o foco: gerar leads ou vendas.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div
+          class="card bg-base-100/50 border border-base-content/10 p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"
+        >
+          <div class="text-4xl mb-4">2️⃣</div>
+          <h3 class="text-xl font-bold mb-2 text-white">
+            Estrutura que converte
+          </h3>
+          <p class="text-sm opacity-70 leading-relaxed">
+            Criamos página com copy estratégica + design funcional. Nada é
+            estético. Tudo é pensado para conversão.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div
+          class="card bg-base-100/50 border border-base-content/10 p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"
+        >
+          <div class="text-4xl mb-4">3️⃣</div>
+          <h3 class="text-xl font-bold mb-2 text-white">Automação integrada</h3>
+          <p class="text-sm opacity-70 leading-relaxed">
+            Leads entram direto no fluxo certo (WhatsApp, CRM ou e-mail). Sem
+            processo manual. Sem improviso.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div
+          class="card bg-base-100/50 border border-base-content/10 p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"
+        >
+          <div class="text-4xl mb-4">4️⃣</div>
+          <h3 class="text-xl font-bold mb-2 text-white">
+            Entrega clara e validável
+          </h3>
+          <p class="text-sm opacity-70 leading-relaxed">
+            Projeto ágil, escopo definido e foco em performance.
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer / Target Audience -->
+      <div
+        class="text-center max-w-4xl mx-auto bg-base-200/50 rounded-2xl p-8 border border-base-content/5"
+      >
+        <p class="text-lg md:text-xl font-medium leading-relaxed">
+          Para <span class="text-white">pequenos e médios negócios</span>,
+          prestadores de serviço, agências e profissionais digitais ou quem quer
+          mais
+          <span
+            class="bg-gradient-to-r from-primary to-info bg-clip-text text-transparent font-bold"
+            >resultado sem complicação.</span
+          >
         </p>
       </div>
     </div>
