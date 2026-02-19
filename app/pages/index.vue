@@ -34,7 +34,9 @@
     <header
       class="relative z-10 w-full max-w-5xl mx-auto px-6 pt-12 pb-12 md:pt-20 md:pb-20 text-center"
     >
-      <div class="badge badge-primary badge-outline mb-6 py-3 px-4 font-bold">
+      <div
+        class="badge badge-primary badge-outline mb-6 py-3 px-4 font-bold text-sm tracking-wider"
+      >
         Processo rápido e sem burocracia
       </div>
 
@@ -464,27 +466,6 @@
               😎 Se você quer resultado, somos.
             </p>
           </div>
-
-          <!-- Mobile Websites Carousel -->
-          <div class="websites-carousel-wrapper">
-            <div
-              class="websites-carousel-track"
-              :style="{ transform: `translateX(-${audienceCarouselOffset}px)` }"
-            >
-              <div
-                v-for="(img, i) in websiteImagesLoop"
-                :key="'aud-' + i"
-                class="websites-carousel-item"
-              >
-                <div class="mobile-frame">
-                  <div class="mobile-frame-notch"></div>
-                  <div class="mobile-frame-screen">
-                    <img :src="img" :alt="'Website ' + (i + 1)" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         <!-- Why Us -->
@@ -520,25 +501,28 @@
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <!-- Mobile Websites Carousel (reverse direction) -->
-          <div class="websites-carousel-wrapper">
-            <div
-              class="websites-carousel-track"
-              :style="{ transform: `translateX(-${whyUsCarouselOffset}px)` }"
-            >
-              <div
-                v-for="(img, i) in websiteImagesLoopReverse"
-                :key="'why-' + i"
-                class="websites-carousel-item"
-              >
-                <div class="mobile-frame">
-                  <div class="mobile-frame-notch"></div>
-                  <div class="mobile-frame-screen">
-                    <img :src="img" :alt="'Website ' + (i + 1)" />
-                  </div>
-                </div>
-              </div>
+  <!-- Websites Showcase Carousel -->
+  <section
+    class="pb-10 bg-base-100 text-base-content border-b border-base-300 overflow-hidden"
+  >
+    <div class="websites-carousel-wrapper">
+      <div
+        class="websites-carousel-track"
+        :style="{ transform: `translateX(-${websiteCarouselOffset}px)` }"
+      >
+        <div
+          v-for="(img, i) in websiteImagesLoop"
+          :key="'ws-' + i"
+          class="websites-carousel-item"
+        >
+          <div class="site-frame">
+            <div class="site-frame-screen">
+              <img :src="img" :alt="'Website ' + (i + 1)" />
             </div>
           </div>
         </div>
@@ -571,69 +555,43 @@ let caseTimer = null;
 
 // ── Websites carousel ─────────────────────────────────────────────────────────
 const websiteImages = [
-  '/images/websites/akira_appti_me_1770650444747 1.png',
-  '/images/websites/cardapio-ehfjjv_appti_me_1770650473303 2.png',
-  '/images/websites/cardapio-restaurante-italiano-tp2n40zg_appti_me_1770650762598 2.png',
-  '/images/websites/cathedra_appti_me_1770650723958 2.png',
-  '/images/websites/cns_com_br_1770650454730 2.png',
-  '/images/websites/delicias-da-lu-hxxouwzc_appti_me_1770650759178 2.png',
-  '/images/websites/jogo-luta-3d-mobile-combate-personalizaca-a0qzw7ta_appti_me_1770650460086 1.png',
-  '/images/websites/loupeloupe_com_1771440749278 1.png',
-  '/images/websites/mimi-se_appti_me_1771440746783 1.png',
-  '/images/websites/quiz-emagrecimento-cartoon-dqmcchko_appti_me_1770650476417 1.png',
-  '/images/websites/souzalimaodontologia_com_1770650470235 2.png',
+  '/images/websites/akira_appti_me.png',
+  '/images/websites/cardapio-ehfjjv_appti_me.png',
+  '/images/websites/cardapio-restaurante-italiano-tp2n40zg_appti_me.png',
+  '/images/websites/cathedra_appti_me.png',
+  '/images/websites/cns_com_br.png',
+  '/images/websites/delicias-da-lu-hxxouwzc_appti_me.png',
+  '/images/websites/jogo-luta-3d-mobile-combate-personalizaca-a0qzw7ta_appti_me.png',
+  '/images/websites/loupeloupe_com.png',
+  '/images/websites/mimi-se_appti_me.png',
+  '/images/websites/observatorio-migracao-religiao_appti_me.png',
+  '/images/websites/quiz-emagrecimento-cartoon-dqmcchko_appti_me.png',
+  '/images/websites/souzalimaodontologia_com.png',
 ];
 
 // Duplicate for seamless loop
 const websiteImagesLoop = computed(() => [...websiteImages, ...websiteImages]);
-const websiteImagesLoopReverse = computed(() => {
-  const reversed = [...websiteImages].reverse();
-  return [...reversed, ...reversed];
-});
 
-const ITEM_WIDTH = 140; // px (frame width + gap)
-const audienceCarouselOffset = ref(0);
-const whyUsCarouselOffset = ref(0);
+const ITEM_WIDTH = 280; // px (frame width + gap)
+const websiteCarouselOffset = ref(0);
 const totalWidth = computed(() => websiteImages.length * ITEM_WIDTH);
 
 let websiteTimer = null;
 
-function tick() {
-  // Cases switcher
-  currentCaseIndex.value = (currentCaseIndex.value + 1) % caseImages.length;
-
-  // Audience carousel (left)
-  audienceCarouselOffset.value += 0.5;
-  if (audienceCarouselOffset.value >= totalWidth.value) {
-    audienceCarouselOffset.value = 0;
-  }
-
-  // Why Us carousel (right)
-  whyUsCarouselOffset.value -= 0.5;
-  if (whyUsCarouselOffset.value <= 0) {
-    whyUsCarouselOffset.value = totalWidth.value;
-  }
-}
-
 onMounted(() => {
-  whyUsCarouselOffset.value = totalWidth.value / 2;
   // Cases: switch every 2.5s
   caseTimer = setInterval(() => {
     currentCaseIndex.value = (currentCaseIndex.value + 1) % caseImages.length;
   }, 2500);
-  // Carousels: smooth RAF loop
+  // Website carousel: smooth RAF loop
   let lastTime = null;
   function animate(ts) {
     if (lastTime !== null) {
       const delta = ts - lastTime;
-      const speed = 0.04; // px per ms
-      audienceCarouselOffset.value += speed * delta;
-      if (audienceCarouselOffset.value >= totalWidth.value) {
-        audienceCarouselOffset.value -= totalWidth.value;
-      }
-      whyUsCarouselOffset.value += speed * delta;
-      if (whyUsCarouselOffset.value >= totalWidth.value) {
-        whyUsCarouselOffset.value -= totalWidth.value;
+      const speed = 0.05; // px per ms
+      websiteCarouselOffset.value += speed * delta;
+      if (websiteCarouselOffset.value >= totalWidth.value) {
+        websiteCarouselOffset.value -= totalWidth.value;
       }
     }
     lastTime = ts;
@@ -792,59 +750,75 @@ onUnmounted(() => {
   mask-image: linear-gradient(
     to right,
     transparent 0%,
-    black 12%,
-    black 88%,
+    black 10%,
+    black 90%,
     transparent 100%
   );
   -webkit-mask-image: linear-gradient(
     to right,
     transparent 0%,
-    black 12%,
-    black 88%,
+    black 10%,
+    black 90%,
     transparent 100%
   );
 }
 
 .websites-carousel-track {
   display: flex;
-  align-items: flex-end;
-  gap: 16px;
+  align-items: flex-start;
+  gap: 24px;
   will-change: transform;
+  padding: 12px 0 16px;
 }
 
 .websites-carousel-item {
   flex-shrink: 0;
 }
 
-/* Mobile Frame */
-.mobile-frame {
-  width: 100px;
-  background: var(--color-base-content);
-  border-radius: 18px;
-  padding: 8px 5px 10px;
-  box-shadow:
-    0 8px 24px color-mix(in srgb, var(--color-base-content) 30%, transparent),
-    inset 0 0 0 1px
-      color-mix(in srgb, var(--color-base-content) 60%, transparent);
-  position: relative;
-}
-
-.mobile-frame-notch {
-  width: 36px;
-  height: 6px;
-  background: color-mix(in srgb, var(--color-base-100) 20%, transparent);
-  border-radius: 3px;
-  margin: 0 auto 6px;
-}
-
-.mobile-frame-screen {
+/* Site Frame (browser-style) */
+.site-frame {
+  width: clamp(150px, 25vw, 200px);
+  background: var(--color-base-200);
+  border: 2px solid
+    color-mix(in srgb, var(--color-base-content) 20%, transparent);
   border-radius: 10px;
   overflow: hidden;
-  aspect-ratio: 9 / 16;
-  background: var(--color-base-200);
+  box-shadow: 0 12px 40px color-mix(in srgb, #000 40%, transparent);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-.mobile-frame-screen img {
+.site-frame:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 56px color-mix(in srgb, #000 55%, transparent);
+}
+
+.site-frame-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background: color-mix(in srgb, var(--color-base-100) 12%, transparent);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--color-base-100) 15%, transparent);
+}
+
+.site-frame-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--color-base-100) 25%, transparent);
+  display: block;
+}
+
+.site-frame-screen {
+  aspect-ratio: 1 / 2;
+  overflow: hidden;
+  background: var(--color-base-300);
+}
+
+.site-frame-screen img {
   width: 100%;
   height: 100%;
   object-fit: cover;
