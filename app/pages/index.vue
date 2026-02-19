@@ -353,9 +353,7 @@
     </div>
   </section>
   <!-- Websites Showcase Carousel -->
-  <section
-    class="pb-10 bg-base-200 text-base-content border-b border-base-content/5 overflow-hidden"
-  >
+  <section class="bg-base-200 text-base-content overflow-hidden">
     <div class="websites-carousel-wrapper">
       <div
         class="websites-carousel-track"
@@ -418,8 +416,6 @@ const cases = [
     image: '/images/cases/app-com-alto-trafego.png',
   },
 ];
-
-const caseImages = computed(() => cases.map((c) => c.image));
 
 // ── Websites carousel ─────────────────────────────────────────────────────────
 const websiteImages = [
@@ -613,6 +609,7 @@ onUnmounted(() => {
 .websites-carousel-wrapper {
   overflow: hidden;
   width: 100%;
+  padding-block: 1rem;
   mask-image: linear-gradient(
     to right,
     transparent 0%,

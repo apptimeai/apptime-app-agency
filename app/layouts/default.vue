@@ -76,17 +76,67 @@ onUnmounted(() => {
       id="cta"
       class="relative py-24 px-6 border-t border-base-content/5 bg-gradient-to-b from-base-200 to-base-100 text-base-content text-center overflow-hidden"
     >
-      <!-- Background Glow -->
-      <div
-        class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-full bg-primary/5 blur-[120px] rounded-full pointer-events-none"
-      ></div>
+      <!-- Animated Grid Background (from Hero) -->
+      <div class="absolute inset-0 z-0 pointer-events-none">
+        <!-- Glow Blobs -->
+        <div
+          class="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[128px] opacity-50 mix-blend-screen animate-pulse"
+        ></div>
+        <div
+          class="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[128px] opacity-50 mix-blend-screen animate-pulse"
+          style="animation-delay: 2s"
+        ></div>
 
-      <div class="relative z-10 max-w-4xl mx-auto">
-        <h2 class="text-4xl md:text-6xl font-black mb-6">
-          Pronto para ter um site que gera resultado?
+        <!-- Grid Pattern -->
+        <div
+          class="absolute inset-0 opacity-[0.03]"
+          style="
+            background-image:
+              linear-gradient(
+                to right,
+                var(--color-base-content) 1px,
+                transparent 1px
+              ),
+              linear-gradient(
+                to bottom,
+                var(--color-base-content) 1px,
+                transparent 1px
+              );
+            background-size: 60px 60px;
+            mask-image: radial-gradient(
+              circle at center,
+              var(--color-base-100) 40%,
+              transparent 100%
+            );
+            -webkit-mask-image: radial-gradient(
+              circle at center,
+              var(--color-base-100) 40%,
+              transparent 100%
+            );
+            animation: gridMove 20s linear infinite;
+          "
+        ></div>
+      </div>
+
+      <div class="relative z-10 max-w-5xl mx-auto">
+        <div
+          class="badge badge-primary badge-outline mb-8 py-3 px-4 font-bold text-sm tracking-wider"
+        >
+          Sem reunião. Sem enrolação.
+        </div>
+
+        <h2
+          class="text-2xl md:text-5xl font-black mb-8 tracking-tight leading-tight"
+        >
+          Seu site pode continuar parado. <br />
+          <span
+            class="bg-gradient-to-r from-primary to-info bg-clip-text text-transparent font-accent italic block"
+            >Ou começar a gerar resultado.</span
+          >
         </h2>
-        <p class="text-xl md:text-2xl opacity-70 mb-10">
-          Solicite agora e receba sua proposta completa.
+        <p class="text-base md:text-lg opacity-70 mb-10 max-w-2xl mx-auto">
+          Solicite agora e receba uma proposta objetiva com valor, escopo claro
+          e tudo que será entregue. Simples, direto e focado em performance.
         </p>
 
         <div class="flex flex-col items-center gap-6">
@@ -95,7 +145,7 @@ onUnmounted(() => {
             target="_blank"
             class="btn border-none rounded-full bg-gradient-to-r from-primary to-info hover:brightness-110 text-white btn-lg px-12 py-4 h-auto text-xl font-bold shadow-[0_0_30px_color-mix(in_srgb,var(--color-primary)_30%,transparent)] transition-all hover:scale-105 hover:shadow-[0_0_50px_color-mix(in_srgb,var(--color-primary)_50%,transparent)]"
           >
-            Quero meu projeto
+            Solicitar Proposta Agora
             <i class="fa-solid fa-arrow-right ml-2"></i>
           </a>
         </div>
@@ -243,3 +293,14 @@ onUnmounted(() => {
     </footer>
   </div>
 </template>
+
+<style scoped>
+@keyframes gridMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60px 60px;
+  }
+}
+</style>
