@@ -18,7 +18,7 @@ onUnmounted(() => {
 
 <template>
   <div
-    class="min-h-screen bg-base-100 text-base-content overflow-x-hidden relative selection:bg-primary selection:text-primary-content"
+    class="min-h-screen bg-gradient-to-b from-base-100 via-base-200 to-base-100 text-base-content overflow-x-hidden relative selection:bg-primary selection:text-primary-content"
   >
     <!-- Background is now flat -->
 
@@ -27,7 +27,7 @@ onUnmounted(() => {
       :class="[
         'fixed top-0 left-0 right-0 z-50 w-full border-b text-base-content transition-all duration-300',
         isScrolled
-          ? 'border-base-300 bg-base-100'
+          ? 'border-base-300/50 bg-base-100/80 backdrop-blur-md'
           : 'border-transparent bg-transparent',
       ]"
     >
@@ -39,7 +39,7 @@ onUnmounted(() => {
       >
         <NuxtLink to="/" class="flex items-center gap-3 group">
           <div
-            class="w-8 h-8 transition-transform group-hover:scale-110 duration-300 bg-primary p-2 rounded-lg"
+            class="w-8 h-8 transition-transform group-hover:scale-110 duration-300 bg-gradient-to-br from-primary to-info p-2 rounded-lg"
           >
             <div>
               <svg
@@ -53,13 +53,14 @@ onUnmounted(() => {
               </svg>
             </div>
           </div>
-          <span class="text-base font-bold font-accent italic"
+          <span
+            class="text-base font-bold font-accent italic tracking-wide bg-clip-text text-base-content"
             >Apptime Agency</span
           >
         </NuxtLink>
         <a
           href="#cta"
-          class="inline-flex btn btn-sm btn-primary md:px-6 shadow-none border-none transition-all"
+          class="inline-flex btn btn-sm rounded-full border-none bg-gradient-to-r from-primary to-info hover:brightness-110 text-white md:px-6 shadow-[0_0_20px_color-mix(in_srgb,var(--color-primary)_20%,transparent)] transition-all hover:shadow-[0_0_30px_color-mix(in_srgb,var(--color-primary)_40%,transparent)]"
         >
           Começar um projeto <i class="fa-solid fa-arrow-right"></i>
         </a>
@@ -73,8 +74,13 @@ onUnmounted(() => {
 
     <div
       id="cta"
-      class="py-24 px-6 border-t border-base-300 bg-base-content text-base-100 text-center"
+      class="relative py-24 px-6 border-t border-base-content/5 bg-gradient-to-b from-base-200 to-base-100 text-base-content text-center overflow-hidden"
     >
+      <!-- Background Glow -->
+      <div
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-full bg-primary/5 blur-[120px] rounded-full pointer-events-none"
+      ></div>
+
       <div class="relative z-10 max-w-4xl mx-auto">
         <h2 class="text-4xl md:text-6xl font-black mb-6">
           Pronto para transformar seu site em uma máquina de oportunidades?
@@ -87,7 +93,7 @@ onUnmounted(() => {
           <a
             href="https://wa.me/5511975205644"
             target="_blank"
-            class="btn btn-primary btn-lg px-12 py-4 h-auto text-xl font-bold shadow-none border-none transition-transform"
+            class="btn border-none rounded-full bg-gradient-to-r from-primary to-info hover:brightness-110 text-white btn-lg px-12 py-4 h-auto text-xl font-bold shadow-[0_0_30px_color-mix(in_srgb,var(--color-primary)_30%,transparent)] transition-all hover:scale-105 hover:shadow-[0_0_50px_color-mix(in_srgb,var(--color-primary)_50%,transparent)]"
           >
             Começar um projeto agora
             <i class="fa-solid fa-arrow-right ml-2"></i>
@@ -98,8 +104,11 @@ onUnmounted(() => {
 
     <!-- Footer CTA -->
     <footer
-      class="relative z-10 py-24 px-6 overflow-hidden border-t border-base-300 bg-base-100 text-base-content"
+      class="relative z-10 py-24 px-6 overflow-hidden border-t border-base-content/5 bg-base-100 text-base-content"
     >
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-primary/5 to-transparent pointer-events-none"
+      ></div>
       <div class="relative z-10 max-w-4xl mx-auto">
         <div
           class="flex flex-col md:flex-row justify-between items-center text-sm opacity-40"

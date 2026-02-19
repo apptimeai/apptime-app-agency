@@ -1,33 +1,47 @@
 <template>
   <!-- Hero Section -->
   <section
-    class="relative bg-base-200 text-base-content pt-24 border-b border-base-300 overflow-hidden"
+    class="relative bg-gradient-to-b from-base-100 via-base-200 to-base-100 text-base-content pt-24 border-b border-base-content/5 overflow-hidden"
   >
     <!-- Animated Grid Background -->
-    <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 z-0 pointer-events-none">
+      <!-- Glow Blobs -->
+      <div
+        class="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[128px] opacity-50 mix-blend-screen animate-pulse"
+      ></div>
+      <div
+        class="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[128px] opacity-50 mix-blend-screen animate-pulse"
+        style="animation-delay: 2s"
+      ></div>
+
       <!-- Grid Pattern -->
       <div
-        class="absolute inset-0 opacity-12"
+        class="absolute inset-0 opacity-[0.03]"
         style="
           background-image:
             linear-gradient(
               to right,
-              var(--color-primary) 1px,
+              var(--color-base-content) 1px,
               transparent 1px
             ),
             linear-gradient(
               to bottom,
-              var(--color-primary) 1px,
+              var(--color-base-content) 1px,
               transparent 1px
             );
           background-size: 60px 60px;
+          mask-image: radial-gradient(
+            circle at center,
+            var(--color-base-100) 40%,
+            transparent 100%
+          );
+          -webkit-mask-image: radial-gradient(
+            circle at center,
+            var(--color-base-100) 40%,
+            transparent 100%
+          );
           animation: gridMove 20s linear infinite;
         "
-      ></div>
-
-      <!-- Gradient Overlay -->
-      <div
-        class="absolute inset-0 bg-gradient-to-b from-transparent via-base-200/80 to-base-200"
       ></div>
     </div>
 
@@ -45,7 +59,7 @@
       >
         Todo mundo cria sites. <br />
         <span
-          class="block mt-2 text-primary font-accent italic text-3xl md:text-6xl pb-4"
+          class="block mt-2 bg-gradient-to-r from-primary to-info bg-clip-text text-transparent font-accent italic text-3xl md:text-6xl pb-4"
         >
           Nós criamos resultados.
         </span>
@@ -71,25 +85,22 @@
       <div class="flex flex-col items-center justify-center gap-4">
         <a
           href="#cta"
-          class="w-full md:w-auto btn btn-primary btn-lg px-2 md:px-12 text-base md:text-lg h-auto py-4"
+          class="w-full md:w-auto btn rounded-full border-none bg-gradient-to-r from-primary to-info hover:brightness-110 text-white btn-lg px-2 md:px-12 text-base md:text-lg h-auto py-4 shadow-[0_0_20px_color-mix(in_srgb,var(--color-primary)_40%,transparent)]"
         >
           Quero um sistema que converte
           <i class="fa-solid fa-arrow-right ml-2"></i>
         </a>
         <p class="text-sm opacity-50 mt-4 md:mt-0 font-medium">
-          Rápido e direto, sem tomar o seu tempo.
+          Rápido, direto e sem tomar o seu tempo.
         </p>
       </div>
     </header>
   </section>
 
   <!-- Clients Carousel -->
-  <section class="py-10 bg-base-100 border-b border-base-300 overflow-hidden">
-    <div class="text-center mb-6">
-      <p class="text-xs font-bold tracking-widest uppercase opacity-40">
-        Quem confia na Apptime
-      </p>
-    </div>
+  <section
+    class="py-10 bg-base-100/50 backdrop-blur-sm border-b border-base-content/5 overflow-hidden"
+  >
     <div class="clients-carousel-wrapper">
       <div class="clients-carousel-track">
         <!-- First set -->
@@ -148,24 +159,35 @@
 
   <!-- The Problem -->
   <section
-    class="relative z-10 py-20 bg-base-content text-base-100 border-y border-base-300"
+    class="relative z-10 py-20 bg-gradient-to-br from-base-200 via-base-300 to-base-200 text-base-content border-y border-base-content/5 overflow-hidden"
   >
-    <div class="max-w-6xl mx-auto md:px-6 px-4">
+    <!-- Background Effect -->
+    <div
+      class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none"
+    >
+      <div
+        class="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-primary/5 blur-[100px] rounded-full"
+      ></div>
+    </div>
+
+    <div class="max-w-6xl mx-auto md:px-6 px-4 relative z-10">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
           Se seu site não traz
-          <span class="text-primary font-accent italic">oportunidades</span>,
-          <br class="hidden md:block" />ele não está cumprindo o papel dele.
+          <span
+            class="bg-gradient-to-r from-primary to-info bg-clip-text text-transparent font-accent italic"
+            >oportunidades</span
+          >, <br class="hidden md:block" />ele não está cumprindo o papel dele.
         </h2>
       </div>
 
       <div class="grid md:grid-cols-4 gap-6">
         <div
-          class="card bg-base-200 text-base-content border border-base-300 hover:border-primary transition-all duration-300"
+          class="card bg-base-100/50 backdrop-blur-md border border-base-content/5 hover:border-primary/50 hover:shadow-[0_0_30px_color-mix(in_srgb,var(--color-primary)_15%,transparent)] transition-all duration-300"
         >
           <div class="card-body items-center text-center">
             <div
-              class="w-16 h-16 rounded-full bg-base-300 flex items-center justify-center mb-4 text-3xl"
+              class="w-16 h-16 rounded-full bg-base-300/50 flex items-center justify-center mb-4 text-3xl"
             >
               😵
             </div>
@@ -177,11 +199,11 @@
         </div>
 
         <div
-          class="card bg-base-200 text-base-content border border-base-300 hover:border-primary transition-all duration-300"
+          class="card bg-base-100/50 backdrop-blur-md border border-base-content/5 hover:border-primary/50 hover:shadow-[0_0_30px_color-mix(in_srgb,var(--color-primary)_15%,transparent)] transition-all duration-300"
         >
           <div class="card-body items-center text-center">
             <div
-              class="w-16 h-16 rounded-full bg-base-300 flex items-center justify-center mb-4 text-3xl"
+              class="w-16 h-16 rounded-full bg-base-300/50 flex items-center justify-center mb-4 text-3xl"
             >
               📉
             </div>
@@ -193,11 +215,11 @@
         </div>
 
         <div
-          class="card bg-base-200 text-base-content border border-base-300 hover:border-primary transition-all duration-300"
+          class="card bg-base-100/50 backdrop-blur-md border border-base-content/5 hover:border-primary/50 hover:shadow-[0_0_30px_color-mix(in_srgb,var(--color-primary)_15%,transparent)] transition-all duration-300"
         >
           <div class="card-body items-center text-center">
             <div
-              class="w-16 h-16 rounded-full bg-base-300 flex items-center justify-center mb-4 text-3xl"
+              class="w-16 h-16 rounded-full bg-base-300/50 flex items-center justify-center mb-4 text-3xl"
             >
               🤯
             </div>
@@ -209,11 +231,11 @@
         </div>
 
         <div
-          class="card bg-base-200 text-base-content border border-base-300 hover:border-primary transition-all duration-300"
+          class="card bg-base-100/50 backdrop-blur-md border border-base-content/5 hover:border-primary/50 hover:shadow-[0_0_30px_color-mix(in_srgb,var(--color-primary)_15%,transparent)] transition-all duration-300"
         >
           <div class="card-body items-center text-center">
             <div
-              class="w-16 h-16 rounded-full bg-base-300 flex items-center justify-center mb-4 text-3xl"
+              class="w-16 h-16 rounded-full bg-base-300/50 flex items-center justify-center mb-4 text-3xl"
             >
               🐢
             </div>
@@ -234,7 +256,7 @@
       <div class="flex flex-col items-center justify-center gap-4 mt-12">
         <a
           href="#cta"
-          class="w-full md:w-auto btn btn-primary btn-lg px-2 md:px-12 text-base md:text-lg h-auto py-2"
+          class="w-full md:w-auto btn rounded-full border-none bg-gradient-to-r from-primary to-info hover:brightness-110 text-white btn-lg px-2 md:px-12 text-base md:text-lg h-auto py-2 shadow-[0_0_20px_color-mix(in_srgb,var(--color-primary)_30%,transparent)]"
         >
           Quero trazer mais oportunidades
           <i class="fa-solid fa-arrow-right ml-2"></i>
@@ -245,21 +267,26 @@
 
   <!-- What We Do -->
   <section
-    class="relative z-10 py-20 md:py-32 bg-base-100 text-base-content overflow-hidden border-b border-base-300"
+    class="relative z-10 py-20 md:py-32 bg-base-100 text-base-content overflow-hidden border-b border-base-content/5"
   >
+    <!-- Background Glow -->
+    <div
+      class="absolute right-0 top-1/4 w-[500px] h-[500px] bg-secondary/10 blur-[100px] rounded-full pointer-events-none mix-blend-screen"
+    ></div>
     <div class="max-w-6xl mx-auto md:px-6 px-4">
       <div class="flex flex-col md:flex-row gap-16 items-center">
         <div class="md:w-1/2">
           <h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight">
             O que fazemos <br />
-            <span class="text-primary font-accent italic lowercase"
+            <span
+              class="bg-gradient-to-r from-primary to-info bg-clip-text text-transparent font-accent italic lowercase"
               >(de verdade)</span
             >
           </h2>
           <div class="space-y-8">
             <div class="flex gap-4">
               <div
-                class="mt-1 w-10 h-10 shrink-0 bg-base-300 flex items-center justify-center text-primary"
+                class="mt-1 w-10 h-10 shrink-0 bg-base-300/50 flex items-center justify-center text-primary"
               >
                 <i class="fa-solid fa-layer-group"></i>
               </div>
@@ -275,7 +302,7 @@
 
             <div class="flex gap-4">
               <div
-                class="mt-1 w-10 h-10 shrink-0 bg-base-300 flex items-center justify-center text-primary"
+                class="mt-1 w-10 h-10 shrink-0 bg-base-300/50 flex items-center justify-center text-primary"
               >
                 <i class="fa-solid fa-magnet"></i>
               </div>
@@ -292,7 +319,7 @@
 
             <div class="flex gap-4">
               <div
-                class="mt-1 w-10 h-10 shrink-0 bg-base-300 flex items-center justify-center text-primary"
+                class="mt-1 w-10 h-10 shrink-0 bg-base-300/50 flex items-center justify-center text-primary"
               >
                 <i class="fa-solid fa-robot"></i>
               </div>
@@ -306,7 +333,7 @@
 
             <div class="flex gap-4">
               <div
-                class="mt-1 w-10 h-10 shrink-0 bg-base-300 flex items-center justify-center text-primary"
+                class="mt-1 w-10 h-10 shrink-0 bg-base-300/50 flex items-center justify-center text-primary"
               >
                 <i class="fa-solid fa-trophy"></i>
               </div>
@@ -323,7 +350,10 @@
           </div>
 
           <div class="mt-10">
-            <a href="#cta" class="btn btn-outline btn-primary px-8">
+            <a
+              href="#cta"
+              class="btn border-none rounded-full bg-gradient-to-r from-primary to-info hover:brightness-110 text-white px-8 shadow-[0_0_20px_color-mix(in_srgb,var(--color-primary)_30%,transparent)]"
+            >
               Ver se isso serve pra mim
             </a>
           </div>
@@ -358,7 +388,7 @@
 
   <!-- Method -->
   <section
-    class="py-20 bg-base-content text-base-100 relative z-10 border-b border-base-300"
+    class="py-20 bg-gradient-to-t from-base-200 to-base-100 text-base-content relative z-10 border-b border-base-content/5"
   >
     <div class="max-w-6xl mx-auto md:px-6 px-4">
       <h2 class="text-3xl md:text-5xl font-bold text-center mb-16">
@@ -368,12 +398,12 @@
       <div class="grid md:grid-cols-4 gap-8">
         <div class="relative group">
           <div
-            class="absolute -top-4 -left-4 text-8xl font-black opacity-5 z-0 select-none"
+            class="absolute -top-4 -left-4 text-8xl font-black opacity-5 z-0 select-none text-white/10"
           >
             1
           </div>
           <div
-            class="relative z-10 bg-base-200 text-base-content p-6 border-t-8 border-primary h-full transition-transform duration-300"
+            class="relative z-10 bg-base-100/60 backdrop-blur-md text-base-content p-6 border-t-8 border-primary h-full transition-transform duration-300 hover:-translate-y-2 border border-base-content/5 shadow-lg"
           >
             <h3 class="text-xl font-bold mb-3">Diagnóstico rápido</h3>
             <p class="opacity-70 text-sm">
@@ -384,12 +414,12 @@
 
         <div class="relative group">
           <div
-            class="absolute -top-4 -left-4 text-8xl font-black opacity-5 z-0 select-none"
+            class="absolute -top-4 -left-4 text-8xl font-black opacity-5 z-0 select-none text-white/10"
           >
             2
           </div>
           <div
-            class="relative z-10 bg-base-300 text-base-content p-6 border-t-8 border-secondary h-full transition-transform duration-300"
+            class="relative z-10 bg-base-100/60 backdrop-blur-md text-base-content p-6 border-t-8 border-secondary h-full transition-transform duration-300 hover:-translate-y-2 border border-base-content/5 shadow-lg"
           >
             <h3 class="text-xl font-bold mb-3">Estrutura de conversão</h3>
             <p class="opacity-70 text-sm">
@@ -400,12 +430,12 @@
 
         <div class="relative group">
           <div
-            class="absolute -top-4 -left-4 text-8xl font-black opacity-5 z-0 select-none"
+            class="absolute -top-4 -left-4 text-8xl font-black opacity-5 z-0 select-none text-white/10"
           >
             3
           </div>
           <div
-            class="relative z-10 bg-base-300 text-base-content p-6 border-t-8 border-accent h-full transition-transform duration-300"
+            class="relative z-10 bg-base-100/60 backdrop-blur-md text-base-content p-6 border-t-8 border-accent h-full transition-transform duration-300 hover:-translate-y-2 border border-base-content/5 shadow-lg"
           >
             <h3 class="text-xl font-bold mb-3">Automação integrada</h3>
             <p class="opacity-70 text-sm">
@@ -416,12 +446,12 @@
 
         <div class="relative group">
           <div
-            class="absolute -top-4 -left-4 text-8xl font-black opacity-5 z-0 select-none"
+            class="absolute -top-4 -left-4 text-8xl font-black opacity-5 z-0 select-none text-white/10"
           >
             4
           </div>
           <div
-            class="relative z-10 bg-base-300 text-base-content p-6 border-t-8 border-primary h-full transition-transform duration-300"
+            class="relative z-10 bg-base-100/60 backdrop-blur-md text-base-content p-6 border-t-8 border-primary h-full transition-transform duration-300 hover:-translate-y-2 border border-base-content/5 shadow-lg"
           >
             <h3 class="text-xl font-bold mb-3">Entrega sem enrolação</h3>
             <p class="opacity-70 text-sm">Projeto ágil, claro e validável.</p>
@@ -432,7 +462,9 @@
   </section>
 
   <!-- Audience & Why Us Split -->
-  <section class="py-20 bg-base-100 text-base-content relative z-10">
+  <section
+    class="py-20 bg-gradient-to-b from-base-100 to-base-200 text-base-content relative z-10"
+  >
     <div class="max-w-7xl mx-auto md:px-6 px-4">
       <div class="grid md:grid-cols-2 gap-12">
         <!-- Audience -->
@@ -457,12 +489,16 @@
             </li>
           </ul>
 
-          <div class="bg-base-200 p-6 border-l-8 border-primary mb-8">
+          <div
+            class="bg-base-100/50 backdrop-blur-sm p-6 border-l-8 border-primary mb-8 border border-base-content/5 rounded-r-lg"
+          >
             <p class="mb-2">
               🤔 <strong>Se você quer só "um site bonito"</strong>,
               provavelmente não somos pra você.
             </p>
-            <p class="font-bold text-primary">
+            <p
+              class="font-bold bg-gradient-to-r from-primary to-info bg-clip-text text-transparent"
+            >
               😎 Se você quer resultado, somos.
             </p>
           </div>
@@ -472,28 +508,36 @@
         <div>
           <h2 class="text-3xl font-bold mb-8">Por que escolher a Apptime?</h2>
           <div class="grid sm:grid-cols-2 gap-4 mb-8">
-            <div class="p-4 bg-base-200 hover:bg-base-300 transition-colors">
+            <div
+              class="p-4 bg-base-100/50 hover:bg-base-200/50 border border-base-content/5 transition-all rounded-lg"
+            >
               <div class="text-3xl mb-2">🚀</div>
               <h4 class="font-bold mb-1">Sistema de vendas</h4>
               <p class="text-sm opacity-70">
                 Não criamos site. Criamos sistemas que convertem.
               </p>
             </div>
-            <div class="p-4 bg-base-200 hover:bg-base-300 transition-colors">
+            <div
+              class="p-4 bg-base-100/50 hover:bg-base-200/50 border border-base-content/5 transition-all rounded-lg"
+            >
               <div class="text-3xl mb-2">⚙️</div>
               <h4 class="font-bold mb-1">Automação total</h4>
               <p class="text-sm opacity-70">
                 Automação configurada desde o primeiro contato.
               </p>
             </div>
-            <div class="p-4 bg-base-200 hover:bg-base-300 transition-colors">
+            <div
+              class="p-4 bg-base-100/50 hover:bg-base-200/50 border border-base-content/5 transition-all rounded-lg"
+            >
               <div class="text-3xl mb-2">📊</div>
               <h4 class="font-bold mb-1">Foco em dados</h4>
               <p class="text-sm opacity-70">
                 Tudo pensado para melhorar sua conversão.
               </p>
             </div>
-            <div class="p-4 bg-base-200 hover:bg-base-300 transition-colors">
+            <div
+              class="p-4 bg-base-100/50 hover:bg-base-200/50 border border-base-content/5 transition-all rounded-lg"
+            >
               <div class="text-3xl mb-2">🇧🇷</div>
               <h4 class="font-bold mb-1">Sem lero-lero</h4>
               <p class="text-sm opacity-70">
@@ -508,7 +552,7 @@
 
   <!-- Websites Showcase Carousel -->
   <section
-    class="pb-10 bg-base-100 text-base-content border-b border-base-300 overflow-hidden"
+    class="pb-10 bg-base-200 text-base-content border-b border-base-content/5 overflow-hidden"
   >
     <div class="websites-carousel-wrapper">
       <div

@@ -26,9 +26,9 @@
   --color-warning: #f59e0b;
   --color-error: #ef4444;
 
-  --radius-selector: 1.5rem;
-  --radius-field: 1rem;
-  --radius-box: 0.5rem;
+  --radius-selector: 2rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
 }
 
 @layer base {
