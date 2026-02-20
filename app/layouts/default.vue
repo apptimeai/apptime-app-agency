@@ -134,7 +134,7 @@ onUnmounted(() => {
             >Ou começar a gerar resultado.</span
           >
         </h2>
-        <p class="text-base md:text-lg opacity-70 mb-10 max-w-2xl mx-auto">
+        <p class="text-base md:text-xl opacity-70 mb-10 max-w-2xl mx-auto">
           Solicite agora e receba uma proposta objetiva com valor, escopo claro
           e tudo que será entregue. Simples, direto e focado em performance.
         </p>

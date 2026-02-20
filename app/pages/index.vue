@@ -59,7 +59,7 @@
       >
         Todo mundo cria sites. <br />
         <span
-          class="block mt-2 bg-gradient-to-r from-primary to-info bg-clip-text text-transparent font-accent italic text-3xl md:text-6xl pb-4 pr-4"
+          class="block mt-2 bg-gradient-to-r from-primary to-info bg-clip-text text-transparent font-accent italic text-3xl md:text-6xl pb-4"
         >
           Nós criamos resultados.
         </span>
@@ -172,21 +172,25 @@
     <div class="max-w-6xl mx-auto md:px-6 px-4">
       <div class="flex flex-col md:flex-row gap-16 items-center">
         <!-- Content List -->
-        <div class="md:w-1/2">
-          <h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight">
+        <div class="md:w-1/2 flex flex-col items-center md:items-start">
+          <h2
+            class="text-3xl md:text-5xl font-bold mb-8 leading-tight text-center md:text-left w-full"
+          >
             O que fazemos <br />
             <span
-              class="bg-gradient-to-r from-primary to-info bg-clip-text text-transparent font-accent italic lowercase pb-2 pr-4 inline-block"
+              class="bg-gradient-to-r w-full from-primary to-info bg-clip-text text-transparent font-accent italic lowercase inline-block"
               >(de verdade)</span
             >
           </h2>
-          <p class="text-base opacity-70 leading-relaxed mb-10">
+          <p
+            class="text-base md:text-xl opacity-70 leading-relaxed mb-10 text-center md:text-left"
+          >
             Do design ao processo completo: logo, branding, experiência do
             usuário, SEO, métricas, formulários, conversões, automações e
             processos.
           </p>
 
-          <div class="space-y-6">
+          <div class="space-y-6 w-full">
             <div
               v-for="(caseItem, index) in cases"
               :key="index"
@@ -256,7 +260,7 @@
           </div>
         </div>
       </div>
-      <div class="mt-10">
+      <div class="mt-10 flex justify-center md:justify-start">
         <a
           href="#cta"
           class="btn border-none rounded-full bg-gradient-to-r from-primary to-info hover:brightness-110 text-white px-8 shadow-[0_0_20px_color-mix(in_srgb,var(--color-primary)_30%,transparent)]"
@@ -278,14 +282,15 @@
     <div class="max-w-6xl mx-auto px-6 relative z-10">
       <!-- Header -->
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-3xl md:text-5xl font-black mb-6">
+        <h2 class="text-3xl md:text-5xl font-black mb-6 md:pl-4">
           Processo
+          <br class="md:hidden" />
           <span
-            class="bg-gradient-to-r from-primary font-accent italic to-info bg-clip-text text-transparent pb-2 pr-4 inline-block"
+            class="bg-gradient-to-r from-primary font-accent italic to-info bg-clip-text text-transparent pb-2 px-4 md:px-0 md:pr-4 inline-block"
             >direto ao ponto</span
           >
         </h2>
-        <p class="text-lg md:text-xl opacity-80 leading-relaxed">
+        <p class="text-base md:text-xl opacity-80 leading-relaxed">
           Você não precisa de reunião desnecessária nem de “especialista”
           vendendo promessa. Você solicita e nós enviamos o
           <span class="text-primary font-bold">valor + escopo claro</span> do
